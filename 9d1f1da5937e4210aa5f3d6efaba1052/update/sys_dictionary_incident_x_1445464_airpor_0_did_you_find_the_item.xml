@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="INSERT_OR_UPDATE" element="x_1445464_airpor_0_did_you_find_the_item" table="incident">
+        <active>true</active>
+        <array>false</array>
+        <attributes>edge_encryption_enabled=true</attributes>
+        <audit>false</audit>
+        <calculation/>
+        <choice>1</choice>
+        <choice_field>item_found_yes_no</choice_field>
+        <choice_table>x_1445464_airpor_0_report</choice_table>
+        <column_label>Did you Find the Item?</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>x_1445464_airpor_0_item_found_yes_no</dependent>
+        <dependent_on_field>x_1445464_airpor_0_item_found_yes_no</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>x_1445464_airpor_0_did_you_find_the_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="String">string</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <name>incident</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-18 14:59:22</sys_created_on>
+        <sys_name>Did you Find the Item?</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_dictionary_incident_x_1445464_airpor_0_did_you_find_the_item</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-26 13:23:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+</record_update>

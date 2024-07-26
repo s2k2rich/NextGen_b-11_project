@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions">
+    <pa_dashboards_permissions action="INSERT_OR_UPDATE">
+        <dashboard display_value="Loast And Found Dashboard">8596420193c34e10aa5f3d6efaba104f</dashboard>
+        <delete>false</delete>
+        <group/>
+        <identity>026de1dd93ba0210aa5f3d6efaba109e</identity>
+        <read>true</read>
+        <role/>
+        <sys_class_name>pa_dashboards_permissions</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 20:00:44</sys_created_on>
+        <sys_id>7d37820193c34e10aa5f3d6efaba10dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>026de1dd93ba0210aa5f3d6efaba109e</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>pa_dashboards_permissions_7d37820193c34e10aa5f3d6efaba10dc</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 20:00:44</sys_updated_on>
+        <type>3</type>
+        <user display_value="">026de1dd93ba0210aa5f3d6efaba109e</user>
+        <write>true</write>
+    </pa_dashboards_permissions>
+</record_update>

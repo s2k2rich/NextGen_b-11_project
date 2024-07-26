@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-14 22:05:16</sys_created_on>
+        <sys_id>623afde593fe4210aa5f3d6efaba100c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1445464_airpor_0_items_of_lost_and_found.x_1445464_airpor_0.user</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_security_acl display_value="x_1445464_airpor_0_items_of_lost_and_found">e63abde593fe4210aa5f3d6efaba10f0</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_623afde593fe4210aa5f3d6efaba100c</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-14 22:05:16</sys_updated_on>
+        <sys_user_role display_value="x_1445464_airpor_0.user" name="x_1445464_airpor_0.user">991f1da5937e4210aa5f3d6efaba1077</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</application>
+        <file_path/>
+        <instance_id>971b443a1b5af11465324089bd4bcbc8</instance_id>
+        <instance_name>dev207475</instance_name>
+        <name>sys_security_acl_role_623afde593fe4210aa5f3d6efaba100c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>erika.truong</sys_created_by><sys_created_on>2024-06-14 22:05:16</sys_created_on><sys_id>623afde593fe4210aa5f3d6efaba100c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1445464_airpor_0_items_of_lost_and_found.x_1445464_airpor_0.user</sys_name><sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package><sys_policy/><sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope><sys_security_acl display_value="x_1445464_airpor_0_items_of_lost_and_found">e63abde593fe4210aa5f3d6efaba10f0</sys_security_acl><sys_update_name>sys_security_acl_role_623afde593fe4210aa5f3d6efaba100c</sys_update_name><sys_updated_by>erika.truong</sys_updated_by><sys_updated_on>2024-06-14 22:05:16</sys_updated_on><sys_user_role display_value="x_1445464_airpor_0.user" name="x_1445464_airpor_0.user">991f1da5937e4210aa5f3d6efaba1077</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-251795499</payload_hash>
+        <record_name>x_1445464_airpor_0_items_of_lost_and_found.x_1445464_airpor_0.user</record_name>
+        <reverted_from/>
+        <source>951f1da5937e4210aa5f3d6efaba1056</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-14 22:05:16</sys_created_on>
+        <sys_id>ea3afde593fe4210aa5f3d6efaba100e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19018c891f60000001</sys_recorded_at>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-14 22:05:16</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>ee3afde552fe4210034d21acbef1270d</update_guid>
+        <update_guid_history>ee3afde552fe4210034d21acbef1270d:-251795499</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">8c5f8ae193728210aa5f3d6efaba10ef</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-14 23:37:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>087ef895b5974520a515facdd7e4c840</sys_id>
+        <sys_metadata>623afde593fe4210aa5f3d6efaba100c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1445464_airpor_0_items_of_lost_and_found.x_1445464_airpor_0.user</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_parent display_value="">e63abde593fe4210aa5f3d6efaba10f0</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_scope_delete display_value="">2aeb418e182d46c0bed412ac2885a031</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_623afde593fe4210aa5f3d6efaba100c</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_623afde593fe4210aa5f3d6efaba100c">ea3afde593fe4210aa5f3d6efaba100e</sys_update_version>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-14 23:37:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,3079 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=448322000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description>After investigation and finding out if item was found, a notification is sent to submitter or manager for approval.</description>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>lost_and_found_notification_flow</internal_name>
+        <label_cache>[{"name":"4decba1e-c435-4677-9667-13f1d169dd8c.record","label":"5 - Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"e3e75a49-0303-48a9-854a-89e81feb9d54":["record"],"79c53b5a-f5c3-4b22-b175-9a1e47510151":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a7a7e7e0-80a9-49f8-a4c8-c43a67c5f055.record","label":"11 - Create or Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"e9ca9e9d-1b92-4d57-9df9-7441fc5e137b":["record"]}},{"name":"0245c07a-3037-45fd-93e5-21cf858e252b.record","label":"8 - Create or Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"c6115a0a-9c31-4b61-ab26-09478f8d86d0":["record"]}},{"name":"Updated_1.current.x_1445464_airpor_0_u_choice_2","label":"Trigger - Record Updated➛Incident Record➛Item Lost","reference":"","reference_display":"Item Lost","type":"choice","base_type":"choice","usedInstances":{}},{"name":"9381c042-e641-4da5-a514-05957692c796.record","label":"5 - Create or Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"e3e75a49-0303-48a9-854a-89e81feb9d54":["record"]}},{"name":"9b65b4dc-faa0-461c-8e15-f49cf24af3d5.record.x_1445464_airpor_0_item_lost_table","label":"7 - Create or Update Record➛Incident Record➛Item Lost - Table","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"5c0b9619-029c-4a74-82ab-234b37caabcd":["record"]}},{"name":"f21eeb10-d2a0-4b90-84cc-5def8ce174c7.record","label":"6 - Create or Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{}},{"name":"9b65b4dc-faa0-461c-8e15-f49cf24af3d5.record","label":"7 - Create or Update Record➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"5c0b9619-029c-4a74-82ab-234b37caabcd":["record"]}},{"name":"Updated_1.current.x_1445464_airpor_0_item_lost_table.last_name","label":"Trigger - Record Updated➛Incident Record➛Item Lost - Table➛Last Name","reference":"","reference_display":"Last Name","type":"string","base_type":"string","usedInstances":{"28ee09f5-dc7c-4e96-b8f1-103c87bbce28":["null"]}},{"name":"Updated_1.current.x_1445464_airpor_0_item_lost_table.first_name","label":"Trigger - Record Updated➛Incident Record➛Item Lost - Table➛First Name","reference":"","reference_display":"First Name","type":"string","base_type":"string","usedInstances":{"28ee09f5-dc7c-4e96-b8f1-103c87bbce28":["null"]}},{"name":"Updated_1.current.x_1445464_airpor_0_item_lost_table.email","label":"Trigger - Record Updated➛Incident Record➛Item Lost - Table➛Submitter email","reference":"","reference_display":"Submitter email","type":"string","base_type":"string","usedInstances":{"28ee09f5-dc7c-4e96-b8f1-103c87bbce28":["ah_to","record"]}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"76315a8f-96d8-452e-9ba9-759f1fb212ea":["record"],"06dde847-6c18-4dc4-9b69-dba6d5a7af40":["record"],"ac41c83d-34f6-49eb-95a4-94370573d49a":["record"],"28ee09f5-dc7c-4e96-b8f1-103c87bbce28":["record"],"4b57b01e-17be-4db3-a323-899e1fe4a74d":["record"]}},{"name":"Updated_1.current.x_1445464_airpor_0_item_lost_table.number","label":"Trigger - Record Updated➛Incident Record➛Item Lost - Table➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","usedInstances":{"6dcb7612-a7d3-41b8-994f-e2adf914fc58":["ah_requested_item"]}},{"name":"Updated_1.current.x_1445464_airpor_0_item_reported_lost","label":"Trigger - Record Updated➛Incident Record➛Item Reported Lost","reference":"","reference_display":"Item Reported Lost","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"x_1445464_airpor_0_item_reported_lost","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"used":false,"label":"Laptop / Computer","rawLabel":"Laptop / Computer","selected":false,"missing":false,"image":"","reference":false,"value":"laptop_computer","parameters":{"name":"x_1445464_airpor_0_report"}},{"used":false,"label":"Smart Phone","rawLabel":"Smart Phone","selected":false,"missing":false,"image":"","reference":false,"value":"smart_phone","parameters":{"name":"x_1445464_airpor_0_report"}},{"used":false,"label":"Document / Passport / ID","rawLabel":"Document / Passport / ID","selected":false,"missing":false,"image":"","reference":false,"value":"document_passport_id","parameters":{"name":"x_1445464_airpor_0_report"}},{"used":false,"label":"All Other Items","rawLabel":"All Other Items","selected":false,"missing":false,"image":"","reference":false,"value":"all_other_items","parameters":{"name":"x_1445464_airpor_0_report"}}],"usedInstances":{"622eabcd-673e-4389-9608-c922b14230c8":["condition"],"88f4acdb-6029-4db7-ba6c-8f4b0006758a":["condition"],"28ee09f5-dc7c-4e96-b8f1-103c87bbce28":["ah_subject"],"5b6ca9f0-1602-4581-b18e-d53a7e51d827":["condition"],"f6cde657-da9e-4337-962c-55f5203177a2":["condition"]}},{"name":"Updated_1.current.x_1445464_airpor_0_item_found_yes_no","label":"Trigger - Record Updated➛Incident Record➛Item Found (Yes/No)","reference":"","reference_display":"Item Found (Yes/No)","type":"choice","base_type":"choice","usedInstances":{}},{"name":"Updated_1.current.x_1445464_airpor_0_item_lost_table","label":"Trigger - Record Updated➛Incident Record➛Item Lost - Table","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"76315a8f-96d8-452e-9ba9-759f1fb212ea":["record"],"4decba1e-c435-4677-9667-13f1d169dd8c":["record"],"dfc60b15-0932-4026-b4eb-4c3dddee6857":["record"],"6dbbb577-83f2-4bf1-b599-fc72ec3ce127":["record"],"e056ae0b-a1a4-465a-8f7d-18e9e8250da5":["record"],"97a4a6de-9fe4-4918-aaf7-c86801a5edf6":["record"],"51b7b13c-b42f-41d6-9089-8a5d95836a9f":["record"]}},{"name":"Updated_1.current.x_1445464_airpor_0_did_you_find_the_item","label":"Trigger - Record Updated➛Incident Record➛Did you Find the Item?","reference":"","reference_display":"Did you Find the Item?","type":"choice","base_type":"choice","usedInstances":{"b4dd3301-c3d2-4e2c-9faa-32075b88b36d":["condition"]}},{"name":"Updated_1.current.x_1445464_airpor_0_lost_and_found_report_number.email","label":"Trigger - Record Updated➛Incident Record➛Lost And Found Report Number➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","usedInstances":{"28ee09f5-dc7c-4e96-b8f1-103c87bbce28":["record"]}},{"name":"f66b2db5-271f-445d-ad5f-f4e9dadae3de.record","label":"2 - Create Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"76315a8f-96d8-452e-9ba9-759f1fb212ea":["record"],"5c0b9619-029c-4a74-82ab-234b37caabcd":["record"]}},{"name":"5302e6d6-2eaf-4aaa-b2cb-1d330bdb3fbf.record","label":"2 - Create or Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"76315a8f-96d8-452e-9ba9-759f1fb212ea":["record"]}},{"name":"5302e6d6-2eaf-4aaa-b2cb-1d330bdb3fbf.record.email","label":"2 - Create or Update Record➛report Record➛Submitter email","reference":"","reference_display":"Submitter email","type":"string","base_type":"string","usedInstances":{}},{"name":"Updated_1.current.x_1445464_airpor_0_report_table","label":"Trigger - Record Updated➛Incident Record➛Report Table","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"76315a8f-96d8-452e-9ba9-759f1fb212ea":["record"]}},{"name":"97a4a6de-9fe4-4918-aaf7-c86801a5edf6.record","label":"2 - Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"61c4749e-55bd-4bf2-a5af-edf8367672d6":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dfc60b15-0932-4026-b4eb-4c3dddee6857.record","label":"8 - Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"d6d6ff32-fbe2-4ea6-b781-1b5510245f9a":["record"],"c6115a0a-9c31-4b61-ab26-09478f8d86d0":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"51b7b13c-b42f-41d6-9089-8a5d95836a9f.record","label":"11 - Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"e9ca9e9d-1b92-4d57-9df9-7441fc5e137b":["record"],"14e0fd26-e9fe-4883-9b94-9231c5d15af9":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>137918b793368610aa5f3d6efaba100c</master_snapshot>
+        <name>Item Found Notification Flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>b77918b793368610aa5f3d6efaba10ce</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 21:23:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0690ef4b93f6c210aa5f3d6efaba10b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Item Found Notification Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_hub_flow_0690ef4b93f6c210aa5f3d6efaba10b6</sys_update_name>
+        <sys_updated_by>richard.castillo</sys_updated_by>
+        <sys_updated_on>2024-07-26 03:25:43</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=0690ef4b93f6c210aa5f3d6efaba10b6"/>
+    <sys_variable_value action="delete_multiple" query="document_key=0690ef4b93f6c210aa5f3d6efaba10b6"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="incident">x_1445464_airpor_0_did_you_find_the_item=Yes<item display_value="Yes" endquery="false" field="x_1445464_airpor_0_did_you_find_the_item" goto="false" newquery="false" operator="=" or="false" value="Yes"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b77918b793368610aa5f3d6efaba10ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:58</sys_updated_on>
+        <table>incident</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>0690ef4b93f6c210aa5f3d6efaba10b6</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 01:55:30</sys_created_on>
+        <sys_id>f8de827493cfca10aa5f3d6efaba10d3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:30</sys_updated_on>
+        <trigger display_value="">b77918b793368610aa5f3d6efaba10ce</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=0690ef4b93f6c210aa5f3d6efaba10b6^sys_idNOT INf8de827493cfca10aa5f3d6efaba10d3"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=0690ef4b93f6c210aa5f3d6efaba10b6^sys_idNOT IN18136f8793f6c210aa5f3d6efaba10ab"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Item Found Notification Flow">0690ef4b93f6c210aa5f3d6efaba10b6</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 21:34:11</sys_created_on>
+        <sys_id>18136f8793f6c210aa5f3d6efaba10ab</sys_id>
+        <sys_mod_count>47</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:31</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=18136f8793f6c210aa5f3d6efaba10ab"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>18136f8793f6c210aa5f3d6efaba10ab</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 21:34:11</sys_created_on>
+        <sys_id>10136f8793f6c210aa5f3d6efaba10ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 21:34:11</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>18136f8793f6c210aa5f3d6efaba10ab</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 15:07:31</sys_created_on>
+        <sys_id>3524575793ba0610aa5f3d6efaba1008</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-20 15:07:31</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>18136f8793f6c210aa5f3d6efaba10ab</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 21:34:11</sys_created_on>
+        <sys_id>58136f8793f6c210aa5f3d6efaba10ac</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 03:25:15</sys_updated_on>
+        <value>x_1445464_airpor_0_did_you_find_the_item=Yes</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=18136f8793f6c210aa5f3d6efaba10ab"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=0690ef4b93f6c210aa5f3d6efaba10b6"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=0690ef4b93f6c210aa5f3d6efaba10b6^sys_idNOT IN0290ef4b93f6c210aa5f3d6efaba10b7"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>0690ef4b93f6c210aa5f3d6efaba10b6</id>
+        <name>Lost And Found Notification Flow</name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 21:23:23</sys_created_on>
+        <sys_id>0290ef4b93f6c210aa5f3d6efaba10b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 21:23:23</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0290ef4b93f6c210aa5f3d6efaba10b7"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=0690ef4b93f6c210aa5f3d6efaba10b6^sys_idNOT IN592b035b937a0610aa5f3d6efaba1078,652b035b937a0610aa5f3d6efaba10b7,ed2b035b937a0610aa5f3d6efaba10a2"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Item Found Notification Flow">0690ef4b93f6c210aa5f3d6efaba10b6</model>
+        <model_id>0690ef4b93f6c210aa5f3d6efaba10b6</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0690ef4b93f6c210aa5f3d6efaba10b6</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 14:28:10</sys_created_on>
+        <sys_id>592b035b937a0610aa5f3d6efaba1078</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=592b035b937a0610aa5f3d6efaba1078"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Item Found Notification Flow">0690ef4b93f6c210aa5f3d6efaba10b6</model>
+        <model_id>0690ef4b93f6c210aa5f3d6efaba10b6</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0690ef4b93f6c210aa5f3d6efaba10b6</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 14:28:10</sys_created_on>
+        <sys_id>652b035b937a0610aa5f3d6efaba10b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-20 14:28:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=652b035b937a0610aa5f3d6efaba10b7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Item Found Notification Flow">0690ef4b93f6c210aa5f3d6efaba10b6</model>
+        <model_id>0690ef4b93f6c210aa5f3d6efaba10b6</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0690ef4b93f6c210aa5f3d6efaba10b6</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 14:28:10</sys_created_on>
+        <sys_id>ed2b035b937a0610aa5f3d6efaba10a2</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ed2b035b937a0610aa5f3d6efaba10a2"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=0690ef4b93f6c210aa5f3d6efaba10b6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0690ef4b93f6c210aa5f3d6efaba10b6"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=0690ef4b93f6c210aa5f3d6efaba10b6^sys_idNOT IN238bcf4893c70a10aa5f3d6efaba106c,3714d8ff93f28610aa5f3d6efaba1075,45fa4bc893c70a10aa5f3d6efaba103f,81e7cf8493c70a10aa5f3d6efaba10d2,d1a8447393f28610aa5f3d6efaba1051,dba70b8493c70a10aa5f3d6efaba10f4,e01ccf0c93c70a10aa5f3d6efaba101d,eb478f4493c70a10aa5f3d6efaba104c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Item Found Notification Flow">0690ef4b93f6c210aa5f3d6efaba10b6</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>88f4acdb-6029-4db7-ba6c-8f4b0006758a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:25:24</sys_created_on>
+        <sys_id>238bcf4893c70a10aa5f3d6efaba106c</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-26 18:47:48</sys_updated_on>
+        <ui_id>51b7b13c-b42f-41d6-9089-8a5d95836a9f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=238bcf4893c70a10aa5f3d6efaba106c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>238bcf4893c70a10aa5f3d6efaba106c</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:25:55</sys_created_on>
+        <sys_id>53ab4b0c93c70a10aa5f3d6efaba1031</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:25:55</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>238bcf4893c70a10aa5f3d6efaba106c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:25:55</sys_created_on>
+        <sys_id>9fab4b0c93c70a10aa5f3d6efaba1030</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:20:21</sys_updated_on>
+        <value>item_lost=laptop_computer</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=238bcf4893c70a10aa5f3d6efaba106c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>238bcf4893c70a10aa5f3d6efaba106c</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:25:55</sys_created_on>
+        <sys_id>1fab4b0c93c70a10aa5f3d6efaba1030</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:25:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current.x_1445464_airpor_0_item_lost_table}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>238bcf4893c70a10aa5f3d6efaba106c</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:25:55</sys_created_on>
+        <sys_id>97ab4b0c93c70a10aa5f3d6efaba1030</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:25:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>238bcf4893c70a10aa5f3d6efaba106c</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:25:55</sys_created_on>
+        <sys_id>5bab4b0c93c70a10aa5f3d6efaba1030</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:25:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=238bcf4893c70a10aa5f3d6efaba106c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=238bcf4893c70a10aa5f3d6efaba106c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Item Found Notification Flow">0690ef4b93f6c210aa5f3d6efaba10b6</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>622eabcd-673e-4389-9608-c922b14230c8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:25:29</sys_created_on>
+        <sys_id>3714d8ff93f28610aa5f3d6efaba1075</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-26 18:47:48</sys_updated_on>
+        <ui_id>c6115a0a-9c31-4b61-ab26-09478f8d86d0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3714d8ff93f28610aa5f3d6efaba1075"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3714d8ff93f28610aa5f3d6efaba1075</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:26:20</sys_created_on>
+        <sys_id>1454d8ff93f28610aa5f3d6efaba107f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:59</sys_updated_on>
+        <value>3cea803793f28610aa5f3d6efaba10fc</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3714d8ff93f28610aa5f3d6efaba1075</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:26:20</sys_created_on>
+        <sys_id>d454d8ff93f28610aa5f3d6efaba107f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:49</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3714d8ff93f28610aa5f3d6efaba1075"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>notification</field>
+        <id>3714d8ff93f28610aa5f3d6efaba1075</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:26:20</sys_created_on>
+        <sys_id>1c54d8ff93f28610aa5f3d6efaba107e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:26:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>3714d8ff93f28610aa5f3d6efaba1075</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:26:20</sys_created_on>
+        <sys_id>9054d8ff93f28610aa5f3d6efaba107f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{dfc60b15-0932-4026-b4eb-4c3dddee6857.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>3714d8ff93f28610aa5f3d6efaba1075</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:26:20</sys_created_on>
+        <sys_id>dc54d8ff93f28610aa5f3d6efaba107e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:26:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3714d8ff93f28610aa5f3d6efaba1075"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3714d8ff93f28610aa5f3d6efaba1075"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Item Found Notification Flow">0690ef4b93f6c210aa5f3d6efaba10b6</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>622eabcd-673e-4389-9608-c922b14230c8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:22:45</sys_created_on>
+        <sys_id>45fa4bc893c70a10aa5f3d6efaba103f</sys_id>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-26 18:47:48</sys_updated_on>
+        <ui_id>dfc60b15-0932-4026-b4eb-4c3dddee6857</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=45fa4bc893c70a10aa5f3d6efaba103f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>45fa4bc893c70a10aa5f3d6efaba103f</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:23:32</sys_created_on>
+        <sys_id>982b8fc893c70a10aa5f3d6efaba106e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:23:32</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>45fa4bc893c70a10aa5f3d6efaba103f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:23:32</sys_created_on>
+        <sys_id>d02b8fc893c70a10aa5f3d6efaba106e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:20:08</sys_updated_on>
+        <value>item_lost=document_passport_id</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=45fa4bc893c70a10aa5f3d6efaba103f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>45fa4bc893c70a10aa5f3d6efaba103f</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:23:32</sys_created_on>
+        <sys_id>502b8fc893c70a10aa5f3d6efaba106e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:23:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current.x_1445464_airpor_0_item_lost_table}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>45fa4bc893c70a10aa5f3d6efaba103f</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:23:32</sys_created_on>
+        <sys_id>d42b8fc893c70a10aa5f3d6efaba106d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:23:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>45fa4bc893c70a10aa5f3d6efaba103f</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:23:32</sys_created_on>
+        <sys_id>9c2b8fc893c70a10aa5f3d6efaba106d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:23:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=45fa4bc893c70a10aa5f3d6efaba103f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=45fa4bc893c70a10aa5f3d6efaba103f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Item Found Notification Flow">0690ef4b93f6c210aa5f3d6efaba10b6</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>f6cde657-da9e-4337-962c-55f5203177a2</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:09:23</sys_created_on>
+        <sys_id>81e7cf8493c70a10aa5f3d6efaba10d2</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-26 18:47:48</sys_updated_on>
+        <ui_id>4decba1e-c435-4677-9667-13f1d169dd8c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=81e7cf8493c70a10aa5f3d6efaba10d2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>81e7cf8493c70a10aa5f3d6efaba10d2</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:10:04</sys_created_on>
+        <sys_id>0f08070493c70a10aa5f3d6efaba1096</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:10:04</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>81e7cf8493c70a10aa5f3d6efaba10d2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:10:04</sys_created_on>
+        <sys_id>4b08070493c70a10aa5f3d6efaba1096</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:19:55</sys_updated_on>
+        <value>item_lost=all_other_items</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=81e7cf8493c70a10aa5f3d6efaba10d2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>81e7cf8493c70a10aa5f3d6efaba10d2</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:10:04</sys_created_on>
+        <sys_id>c708070493c70a10aa5f3d6efaba1096</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:10:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current.x_1445464_airpor_0_item_lost_table}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>81e7cf8493c70a10aa5f3d6efaba10d2</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:10:04</sys_created_on>
+        <sys_id>4308070493c70a10aa5f3d6efaba1096</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:10:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>81e7cf8493c70a10aa5f3d6efaba10d2</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:10:04</sys_created_on>
+        <sys_id>0708070493c70a10aa5f3d6efaba1096</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:10:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=81e7cf8493c70a10aa5f3d6efaba10d2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=81e7cf8493c70a10aa5f3d6efaba10d2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Item Found Notification Flow">0690ef4b93f6c210aa5f3d6efaba10b6</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>f6cde657-da9e-4337-962c-55f5203177a2</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 13:35:21</sys_created_on>
+        <sys_id>d1a8447393f28610aa5f3d6efaba1051</sys_id>
+        <sys_mod_count>48</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-26 18:47:48</sys_updated_on>
+        <ui_id>e3e75a49-0303-48a9-854a-89e81feb9d54</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d1a8447393f28610aa5f3d6efaba1051"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d1a8447393f28610aa5f3d6efaba1051</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 13:36:12</sys_created_on>
+        <sys_id>0ed808bf93b28610aa5f3d6efaba102c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:13:42</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d1a8447393f28610aa5f3d6efaba1051</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 13:36:12</sys_created_on>
+        <sys_id>4ad808bf93b28610aa5f3d6efaba102c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:12</sys_updated_on>
+        <value>28d8b1af93f64610aa5f3d6efaba1023</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d1a8447393f28610aa5f3d6efaba1051"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>notification</field>
+        <id>d1a8447393f28610aa5f3d6efaba1051</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 13:36:12</sys_created_on>
+        <sys_id>42d808bf93b28610aa5f3d6efaba102c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 13:36:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d1a8447393f28610aa5f3d6efaba1051</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 13:36:12</sys_created_on>
+        <sys_id>c6d808bf93b28610aa5f3d6efaba102c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:13:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{4decba1e-c435-4677-9667-13f1d169dd8c.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d1a8447393f28610aa5f3d6efaba1051</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 13:36:12</sys_created_on>
+        <sys_id>06d808bf93b28610aa5f3d6efaba102c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 13:36:12</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d1a8447393f28610aa5f3d6efaba1051"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d1a8447393f28610aa5f3d6efaba1051"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Item Found Notification Flow">0690ef4b93f6c210aa5f3d6efaba10b6</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>5b6ca9f0-1602-4581-b18e-d53a7e51d827</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:08:27</sys_created_on>
+        <sys_id>dba70b8493c70a10aa5f3d6efaba10f4</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-26 18:47:48</sys_updated_on>
+        <ui_id>61c4749e-55bd-4bf2-a5af-edf8367672d6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=dba70b8493c70a10aa5f3d6efaba10f4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dba70b8493c70a10aa5f3d6efaba10f4</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:08:27</sys_created_on>
+        <sys_id>1ba70b8493c70a10aa5f3d6efaba10f6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-24 02:45:00</sys_updated_on>
+        <value>ceff096893878a10aa5f3d6efaba10c6</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dba70b8493c70a10aa5f3d6efaba10f4</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:08:27</sys_created_on>
+        <sys_id>dba70b8493c70a10aa5f3d6efaba10f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:08:27</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=dba70b8493c70a10aa5f3d6efaba10f4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>notification</field>
+        <id>dba70b8493c70a10aa5f3d6efaba10f4</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:08:27</sys_created_on>
+        <sys_id>13a70b8493c70a10aa5f3d6efaba10f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:08:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>dba70b8493c70a10aa5f3d6efaba10f4</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:08:27</sys_created_on>
+        <sys_id>97a70b8493c70a10aa5f3d6efaba10f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:08:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{97a4a6de-9fe4-4918-aaf7-c86801a5edf6.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>dba70b8493c70a10aa5f3d6efaba10f4</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:08:27</sys_created_on>
+        <sys_id>d3a70b8493c70a10aa5f3d6efaba10f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:08:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=dba70b8493c70a10aa5f3d6efaba10f4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dba70b8493c70a10aa5f3d6efaba10f4"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Item Found Notification Flow">0690ef4b93f6c210aa5f3d6efaba10b6</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>88f4acdb-6029-4db7-ba6c-8f4b0006758a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:27:38</sys_created_on>
+        <sys_id>e01ccf0c93c70a10aa5f3d6efaba101d</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-26 18:47:48</sys_updated_on>
+        <ui_id>14e0fd26-e9fe-4883-9b94-9231c5d15af9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e01ccf0c93c70a10aa5f3d6efaba101d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e01ccf0c93c70a10aa5f3d6efaba101d</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:28:02</sys_created_on>
+        <sys_id>162c0b4c93c70a10aa5f3d6efaba10d3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:12</sys_updated_on>
+        <value>5c1e403b93f28610aa5f3d6efaba1075</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e01ccf0c93c70a10aa5f3d6efaba101d</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:28:02</sys_created_on>
+        <sys_id>d62c0b4c93c70a10aa5f3d6efaba10d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:28:02</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e01ccf0c93c70a10aa5f3d6efaba101d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>notification</field>
+        <id>e01ccf0c93c70a10aa5f3d6efaba101d</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:28:02</sys_created_on>
+        <sys_id>1e2c0b4c93c70a10aa5f3d6efaba10d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:28:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>e01ccf0c93c70a10aa5f3d6efaba101d</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:28:02</sys_created_on>
+        <sys_id>922c0b4c93c70a10aa5f3d6efaba10d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:28:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{51b7b13c-b42f-41d6-9089-8a5d95836a9f.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>e01ccf0c93c70a10aa5f3d6efaba101d</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:28:02</sys_created_on>
+        <sys_id>de2c0b4c93c70a10aa5f3d6efaba10d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:28:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e01ccf0c93c70a10aa5f3d6efaba101d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e01ccf0c93c70a10aa5f3d6efaba101d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Item Found Notification Flow">0690ef4b93f6c210aa5f3d6efaba10b6</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>5b6ca9f0-1602-4581-b18e-d53a7e51d827</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:06:49</sys_created_on>
+        <sys_id>eb478f4493c70a10aa5f3d6efaba104c</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-26 18:47:48</sys_updated_on>
+        <ui_id>97a4a6de-9fe4-4918-aaf7-c86801a5edf6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=eb478f4493c70a10aa5f3d6efaba104c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>eb478f4493c70a10aa5f3d6efaba104c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:07:33</sys_created_on>
+        <sys_id>0a778fc093c70a10aa5f3d6efaba101a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:19:43</sys_updated_on>
+        <value>item_lost=smart_phone</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>eb478f4493c70a10aa5f3d6efaba104c</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:07:33</sys_created_on>
+        <sys_id>ca778fc093c70a10aa5f3d6efaba101a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:07:33</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=eb478f4493c70a10aa5f3d6efaba104c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>eb478f4493c70a10aa5f3d6efaba104c</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:07:33</sys_created_on>
+        <sys_id>86778fc093c70a10aa5f3d6efaba101a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:07:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current.x_1445464_airpor_0_item_lost_table}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>eb478f4493c70a10aa5f3d6efaba104c</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:07:33</sys_created_on>
+        <sys_id>02778fc093c70a10aa5f3d6efaba101a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:07:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>eb478f4493c70a10aa5f3d6efaba104c</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-22 22:07:33</sys_created_on>
+        <sys_id>c2778fc093c70a10aa5f3d6efaba101a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:07:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=eb478f4493c70a10aa5f3d6efaba104c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=eb478f4493c70a10aa5f3d6efaba104c"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=0690ef4b93f6c210aa5f3d6efaba10b6"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=0690ef4b93f6c210aa5f3d6efaba10b6^sys_idNOT IN1d4f043b93f28610aa5f3d6efaba10a3,6113af0f93f6c210aa5f3d6efaba100a,6c64503393368610aa5f3d6efaba1030,bb67c4ff93b28610aa5f3d6efaba10ee"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b279d4b793368610aa5f3d6efaba1089</block>
+        <comment/>
+        <connected_to>5b6ca9f0-1602-4581-b18e-d53a7e51d827</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Item Found Notification Flow">0690ef4b93f6c210aa5f3d6efaba10b6</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:04:17</sys_created_on>
+        <sys_id>1d4f043b93f28610aa5f3d6efaba10a3</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:31</sys_updated_on>
+        <ui_id>622eabcd-673e-4389-9608-c922b14230c8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=1d4f043b93f28610aa5f3d6efaba10a3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>1d4f043b93f28610aa5f3d6efaba10a3</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:05:18</sys_created_on>
+        <sys_id>508f4c7b93f28610aa5f3d6efaba10dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:05:18</sys_updated_on>
+        <value>Item is Document/Passport/ID</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1d4f043b93f28610aa5f3d6efaba10a3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>1d4f043b93f28610aa5f3d6efaba10a3</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:05:18</sys_created_on>
+        <sys_id>dc8f4c7b93f28610aa5f3d6efaba10dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:05:18</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Updated_1.current.x_1445464_airpor_0_item_reported_lost}}=document_passport_id</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>1d4f043b93f28610aa5f3d6efaba10a3</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:05:18</sys_created_on>
+        <sys_id>188f4c7b93f28610aa5f3d6efaba10dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:05:18</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=1d4f043b93f28610aa5f3d6efaba10a3"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1d4f043b93f28610aa5f3d6efaba10a3"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4e562343933ac210aa5f3d6efaba10a3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Item Found Notification Flow">0690ef4b93f6c210aa5f3d6efaba10b6</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 21:34:17</sys_created_on>
+        <sys_id>6113af0f93f6c210aa5f3d6efaba100a</sys_id>
+        <sys_mod_count>76</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:31</sys_updated_on>
+        <ui_id>5b6ca9f0-1602-4581-b18e-d53a7e51d827</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6113af0f93f6c210aa5f3d6efaba100a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>6113af0f93f6c210aa5f3d6efaba100a</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 21:48:30</sys_created_on>
+        <sys_id>8a562343933ac210aa5f3d6efaba10a7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:54</sys_updated_on>
+        <value>Item is Smart Phone found</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6113af0f93f6c210aa5f3d6efaba100a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>6113af0f93f6c210aa5f3d6efaba100a</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 21:48:30</sys_created_on>
+        <sys_id>0a562343933ac210aa5f3d6efaba10a7</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:04:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Updated_1.current.x_1445464_airpor_0_item_reported_lost}}=smart_phone</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>6113af0f93f6c210aa5f3d6efaba100a</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 21:48:30</sys_created_on>
+        <sys_id>42562343933ac210aa5f3d6efaba10a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 21:48:30</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6113af0f93f6c210aa5f3d6efaba100a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6113af0f93f6c210aa5f3d6efaba100a"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3a79d4b793368610aa5f3d6efaba1091</block>
+        <comment/>
+        <connected_to>5b6ca9f0-1602-4581-b18e-d53a7e51d827</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Item Found Notification Flow">0690ef4b93f6c210aa5f3d6efaba10b6</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:26:37</sys_created_on>
+        <sys_id>6c64503393368610aa5f3d6efaba1030</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:31</sys_updated_on>
+        <ui_id>88f4acdb-6029-4db7-ba6c-8f4b0006758a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6c64503393368610aa5f3d6efaba1030"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>6c64503393368610aa5f3d6efaba1030</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:28:10</sys_created_on>
+        <sys_id>c7b4183393368610aa5f3d6efaba10d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:28:10</sys_updated_on>
+        <value>Item is Laptop/Computer</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6c64503393368610aa5f3d6efaba1030"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>6c64503393368610aa5f3d6efaba1030</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:28:10</sys_created_on>
+        <sys_id>47b4183393368610aa5f3d6efaba10d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:28:10</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Updated_1.current.x_1445464_airpor_0_item_reported_lost}}=laptop_computer</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>6c64503393368610aa5f3d6efaba1030</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:28:10</sys_created_on>
+        <sys_id>83b4183393368610aa5f3d6efaba10d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:28:10</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6c64503393368610aa5f3d6efaba1030"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6c64503393368610aa5f3d6efaba1030"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3e79d4b793368610aa5f3d6efaba1080</block>
+        <comment/>
+        <connected_to>5b6ca9f0-1602-4581-b18e-d53a7e51d827</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Item Found Notification Flow">0690ef4b93f6c210aa5f3d6efaba10b6</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 13:30:02</sys_created_on>
+        <sys_id>bb67c4ff93b28610aa5f3d6efaba10ee</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:31</sys_updated_on>
+        <ui_id>f6cde657-da9e-4337-962c-55f5203177a2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=bb67c4ff93b28610aa5f3d6efaba10ee"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>bb67c4ff93b28610aa5f3d6efaba10ee</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 13:31:36</sys_created_on>
+        <sys_id>eec7043393f28610aa5f3d6efaba1015</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 13:31:36</sys_updated_on>
+        <value>Item is Luggage, Clothing or Other Items</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=bb67c4ff93b28610aa5f3d6efaba10ee"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>bb67c4ff93b28610aa5f3d6efaba10ee</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 13:31:36</sys_created_on>
+        <sys_id>6ec7043393f28610aa5f3d6efaba1015</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 22:09:03</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Updated_1.current.x_1445464_airpor_0_item_reported_lost}}=all_other_items</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>bb67c4ff93b28610aa5f3d6efaba10ee</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 13:31:36</sys_created_on>
+        <sys_id>a6c7043393f28610aa5f3d6efaba1015</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 13:31:36</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=bb67c4ff93b28610aa5f3d6efaba10ee"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bb67c4ff93b28610aa5f3d6efaba10ee"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=0690ef4b93f6c210aa5f3d6efaba10b6^sys_idNOT IN6d69046f93be0610aa5f3d6efaba1097,a569046f93be0610aa5f3d6efaba1097"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>0690ef4b93f6c210aa5f3d6efaba10b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.x_1445464_airpor_0_item_lost_table.last_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 19:00:09</sys_created_on>
+        <sys_id>6d69046f93be0610aa5f3d6efaba1097</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-20 19:00:09</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>30e408c7-f0a5-463e-88eb-3000569ae53c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>0690ef4b93f6c210aa5f3d6efaba10b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.x_1445464_airpor_0_item_lost_table.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 19:00:09</sys_created_on>
+        <sys_id>a569046f93be0610aa5f3d6efaba1097</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-20 19:00:09</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8505c528-99a1-4a56-be6f-b24afea44477</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=0690ef4b93f6c210aa5f3d6efaba10b6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_0690ef4b93f6c210aa5f3d6efaba10b6^sys_idNOT IN252b035b937a0610aa5f3d6efaba10a7,612b035b937a0610aa5f3d6efaba10bc,6d2b035b937a0610aa5f3d6efaba109e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0690ef4b93f6c210aa5f3d6efaba10b6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 14:28:10</sys_created_on>
+        <sys_id>252b035b937a0610aa5f3d6efaba10a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_0690ef4b93f6c210aa5f3d6efaba10b6_current_en</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-20 14:28:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0690ef4b93f6c210aa5f3d6efaba10b6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 14:28:10</sys_created_on>
+        <sys_id>612b035b937a0610aa5f3d6efaba10bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Changed Fields</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_0690ef4b93f6c210aa5f3d6efaba10b6_changed_fields_en</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-20 14:28:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0690ef4b93f6c210aa5f3d6efaba10b6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 14:28:10</sys_created_on>
+        <sys_id>6d2b035b937a0610aa5f3d6efaba109e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_0690ef4b93f6c210aa5f3d6efaba10b6_table_name_en</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-20 14:28:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_0690ef4b93f6c210aa5f3d6efaba10b6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_0690ef4b93f6c210aa5f3d6efaba10b6"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_0690ef4b93f6c210aa5f3d6efaba10b6"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name/>
+        <description>After investigation and finding out if item was found, a notification is sent to submitter or manager for approval.</description>
+        <flow_priority/>
+        <internal_name>lost_and_found_notification_flow</internal_name>
+        <label_cache>[{"name":"4decba1e-c435-4677-9667-13f1d169dd8c.record","label":"5 - Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"e3e75a49-0303-48a9-854a-89e81feb9d54":["record"],"79c53b5a-f5c3-4b22-b175-9a1e47510151":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a7a7e7e0-80a9-49f8-a4c8-c43a67c5f055.record","label":"11 - Create or Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"e9ca9e9d-1b92-4d57-9df9-7441fc5e137b":["record"]}},{"name":"0245c07a-3037-45fd-93e5-21cf858e252b.record","label":"8 - Create or Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"c6115a0a-9c31-4b61-ab26-09478f8d86d0":["record"]}},{"name":"Updated_1.current.x_1445464_airpor_0_u_choice_2","label":"Trigger - Record Updated➛Incident Record➛Item Lost","reference":"","reference_display":"Item Lost","type":"choice","base_type":"choice","usedInstances":{}},{"name":"9381c042-e641-4da5-a514-05957692c796.record","label":"5 - Create or Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"e3e75a49-0303-48a9-854a-89e81feb9d54":["record"]}},{"name":"9b65b4dc-faa0-461c-8e15-f49cf24af3d5.record.x_1445464_airpor_0_item_lost_table","label":"7 - Create or Update Record➛Incident Record➛Item Lost - Table","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"5c0b9619-029c-4a74-82ab-234b37caabcd":["record"]}},{"name":"f21eeb10-d2a0-4b90-84cc-5def8ce174c7.record","label":"6 - Create or Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{}},{"name":"9b65b4dc-faa0-461c-8e15-f49cf24af3d5.record","label":"7 - Create or Update Record➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"5c0b9619-029c-4a74-82ab-234b37caabcd":["record"]}},{"name":"Updated_1.current.x_1445464_airpor_0_item_lost_table.last_name","label":"Trigger - Record Updated➛Incident Record➛Item Lost - Table➛Last Name","reference":"","reference_display":"Last Name","type":"string","base_type":"string","usedInstances":{"28ee09f5-dc7c-4e96-b8f1-103c87bbce28":["null"]}},{"name":"Updated_1.current.x_1445464_airpor_0_item_lost_table.first_name","label":"Trigger - Record Updated➛Incident Record➛Item Lost - Table➛First Name","reference":"","reference_display":"First Name","type":"string","base_type":"string","usedInstances":{"28ee09f5-dc7c-4e96-b8f1-103c87bbce28":["null"]}},{"name":"Updated_1.current.x_1445464_airpor_0_item_lost_table.email","label":"Trigger - Record Updated➛Incident Record➛Item Lost - Table➛Submitter email","reference":"","reference_display":"Submitter email","type":"string","base_type":"string","usedInstances":{"28ee09f5-dc7c-4e96-b8f1-103c87bbce28":["ah_to","record"]}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"76315a8f-96d8-452e-9ba9-759f1fb212ea":["record"],"06dde847-6c18-4dc4-9b69-dba6d5a7af40":["record"],"ac41c83d-34f6-49eb-95a4-94370573d49a":["record"],"28ee09f5-dc7c-4e96-b8f1-103c87bbce28":["record"],"4b57b01e-17be-4db3-a323-899e1fe4a74d":["record"]}},{"name":"Updated_1.current.x_1445464_airpor_0_item_lost_table.number","label":"Trigger - Record Updated➛Incident Record➛Item Lost - Table➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","usedInstances":{"6dcb7612-a7d3-41b8-994f-e2adf914fc58":["ah_requested_item"]}},{"name":"Updated_1.current.x_1445464_airpor_0_item_reported_lost","label":"Trigger - Record Updated➛Incident Record➛Item Reported Lost","reference":"","reference_display":"Item Reported Lost","type":"choice","base_type":"choice","parent_table_name":"incident","column_name":"x_1445464_airpor_0_item_reported_lost","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"used":false,"label":"Laptop / Computer","rawLabel":"Laptop / Computer","selected":false,"missing":false,"image":"","reference":false,"value":"laptop_computer","parameters":{"name":"x_1445464_airpor_0_report"}},{"used":false,"label":"Smart Phone","rawLabel":"Smart Phone","selected":false,"missing":false,"image":"","reference":false,"value":"smart_phone","parameters":{"name":"x_1445464_airpor_0_report"}},{"used":false,"label":"Document / Passport / ID","rawLabel":"Document / Passport / ID","selected":false,"missing":false,"image":"","reference":false,"value":"document_passport_id","parameters":{"name":"x_1445464_airpor_0_report"}},{"used":false,"label":"All Other Items","rawLabel":"All Other Items","selected":false,"missing":false,"image":"","reference":false,"value":"all_other_items","parameters":{"name":"x_1445464_airpor_0_report"}}],"usedInstances":{"622eabcd-673e-4389-9608-c922b14230c8":["condition"],"88f4acdb-6029-4db7-ba6c-8f4b0006758a":["condition"],"28ee09f5-dc7c-4e96-b8f1-103c87bbce28":["ah_subject"],"5b6ca9f0-1602-4581-b18e-d53a7e51d827":["condition"],"f6cde657-da9e-4337-962c-55f5203177a2":["condition"]}},{"name":"Updated_1.current.x_1445464_airpor_0_item_found_yes_no","label":"Trigger - Record Updated➛Incident Record➛Item Found (Yes/No)","reference":"","reference_display":"Item Found (Yes/No)","type":"choice","base_type":"choice","usedInstances":{}},{"name":"Updated_1.current.x_1445464_airpor_0_item_lost_table","label":"Trigger - Record Updated➛Incident Record➛Item Lost - Table","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"76315a8f-96d8-452e-9ba9-759f1fb212ea":["record"],"4decba1e-c435-4677-9667-13f1d169dd8c":["record"],"dfc60b15-0932-4026-b4eb-4c3dddee6857":["record"],"6dbbb577-83f2-4bf1-b599-fc72ec3ce127":["record"],"e056ae0b-a1a4-465a-8f7d-18e9e8250da5":["record"],"97a4a6de-9fe4-4918-aaf7-c86801a5edf6":["record"],"51b7b13c-b42f-41d6-9089-8a5d95836a9f":["record"]}},{"name":"Updated_1.current.x_1445464_airpor_0_did_you_find_the_item","label":"Trigger - Record Updated➛Incident Record➛Did you Find the Item?","reference":"","reference_display":"Did you Find the Item?","type":"choice","base_type":"choice","usedInstances":{"b4dd3301-c3d2-4e2c-9faa-32075b88b36d":["condition"]}},{"name":"Updated_1.current.x_1445464_airpor_0_lost_and_found_report_number.email","label":"Trigger - Record Updated➛Incident Record➛Lost And Found Report Number➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","usedInstances":{"28ee09f5-dc7c-4e96-b8f1-103c87bbce28":["record"]}},{"name":"f66b2db5-271f-445d-ad5f-f4e9dadae3de.record","label":"2 - Create Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"76315a8f-96d8-452e-9ba9-759f1fb212ea":["record"],"5c0b9619-029c-4a74-82ab-234b37caabcd":["record"]}},{"name":"5302e6d6-2eaf-4aaa-b2cb-1d330bdb3fbf.record","label":"2 - Create or Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"76315a8f-96d8-452e-9ba9-759f1fb212ea":["record"]}},{"name":"5302e6d6-2eaf-4aaa-b2cb-1d330bdb3fbf.record.email","label":"2 - Create or Update Record➛report Record➛Submitter email","reference":"","reference_display":"Submitter email","type":"string","base_type":"string","usedInstances":{}},{"name":"Updated_1.current.x_1445464_airpor_0_report_table","label":"Trigger - Record Updated➛Incident Record➛Report Table","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"76315a8f-96d8-452e-9ba9-759f1fb212ea":["record"]}},{"name":"97a4a6de-9fe4-4918-aaf7-c86801a5edf6.record","label":"2 - Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"61c4749e-55bd-4bf2-a5af-edf8367672d6":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dfc60b15-0932-4026-b4eb-4c3dddee6857.record","label":"8 - Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"d6d6ff32-fbe2-4ea6-b781-1b5510245f9a":["record"],"c6115a0a-9c31-4b61-ab26-09478f8d86d0":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"51b7b13c-b42f-41d6-9089-8a5d95836a9f.record","label":"11 - Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"e9ca9e9d-1b92-4d57-9df9-7441fc5e137b":["record"],"14e0fd26-e9fe-4883-9b94-9231c5d15af9":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Item Found Notification Flow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Item Found Notification Flow">0690ef4b93f6c210aa5f3d6efaba10b6</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>137918b793368610aa5f3d6efaba100c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:29</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=137918b793368610aa5f3d6efaba100c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=137918b793368610aa5f3d6efaba100c"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=137918b793368610aa5f3d6efaba100c^sys_idNOT IN2f7918b793368610aa5f3d6efaba109b"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Item Found Notification Flow">137918b793368610aa5f3d6efaba100c</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:57</sys_created_on>
+        <sys_id>2f7918b793368610aa5f3d6efaba109b</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:30</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2f7918b793368610aa5f3d6efaba109b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>2f7918b793368610aa5f3d6efaba109b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:57</sys_created_on>
+        <sys_id>3f7918b793368610aa5f3d6efaba109d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:57</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>2f7918b793368610aa5f3d6efaba109b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:57</sys_created_on>
+        <sys_id>7b7918b793368610aa5f3d6efaba109d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:57</sys_updated_on>
+        <value>x_1445464_airpor_0_did_you_find_the_item=Yes</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>2f7918b793368610aa5f3d6efaba109b</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:57</sys_created_on>
+        <sys_id>b77918b793368610aa5f3d6efaba109d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:57</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=2f7918b793368610aa5f3d6efaba109b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=137918b793368610aa5f3d6efaba100c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=137918b793368610aa5f3d6efaba100c^sys_idNOT IN537918b793368610aa5f3d6efaba100d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>137918b793368610aa5f3d6efaba100c</id>
+        <name>Lost And Found Notification Flow</name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>537918b793368610aa5f3d6efaba100d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:56</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=537918b793368610aa5f3d6efaba100d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=137918b793368610aa5f3d6efaba100c^sys_idNOT IN137918b793368610aa5f3d6efaba102a,577918b793368610aa5f3d6efaba100e,d37918b793368610aa5f3d6efaba1032"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Item Found Notification Flow">137918b793368610aa5f3d6efaba100c</model>
+        <model_id>137918b793368610aa5f3d6efaba100c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_137918b793368610aa5f3d6efaba100c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>137918b793368610aa5f3d6efaba102a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=137918b793368610aa5f3d6efaba102a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Item Found Notification Flow">137918b793368610aa5f3d6efaba100c</model>
+        <model_id>137918b793368610aa5f3d6efaba100c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_137918b793368610aa5f3d6efaba100c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>577918b793368610aa5f3d6efaba100e</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=577918b793368610aa5f3d6efaba100e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Item Found Notification Flow">137918b793368610aa5f3d6efaba100c</model>
+        <model_id>137918b793368610aa5f3d6efaba100c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_137918b793368610aa5f3d6efaba100c</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>d37918b793368610aa5f3d6efaba1032</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d37918b793368610aa5f3d6efaba1032"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=137918b793368610aa5f3d6efaba100c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=137918b793368610aa5f3d6efaba100c"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=137918b793368610aa5f3d6efaba100c^sys_idNOT IN235ff3d893cf4a10aa5f3d6efaba1025,675ff3d893cf4a10aa5f3d6efaba1016,6f5ff3d893cf4a10aa5f3d6efaba100d,ab7918b793368610aa5f3d6efaba1080,e37918b793368610aa5f3d6efaba108d,e75ff3d893cf4a10aa5f3d6efaba1007,ef5fb3d893cf4a10aa5f3d6efaba10fe,ef5ff3d893cf4a10aa5f3d6efaba101e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Item Found Notification Flow">137918b793368610aa5f3d6efaba100c</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>88f4acdb-6029-4db7-ba6c-8f4b0006758a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>235ff3d893cf4a10aa5f3d6efaba1025</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:29</sys_updated_on>
+        <ui_id>14e0fd26-e9fe-4883-9b94-9231c5d15af9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=235ff3d893cf4a10aa5f3d6efaba1025"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>235ff3d893cf4a10aa5f3d6efaba1025</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>2f5ff3d893cf4a10aa5f3d6efaba1026</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>235ff3d893cf4a10aa5f3d6efaba1025</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>6b5ff3d893cf4a10aa5f3d6efaba1026</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <value>5c1e403b93f28610aa5f3d6efaba1075</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=235ff3d893cf4a10aa5f3d6efaba1025"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>notification</field>
+        <id>235ff3d893cf4a10aa5f3d6efaba1025</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>635ff3d893cf4a10aa5f3d6efaba1026</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>235ff3d893cf4a10aa5f3d6efaba1025</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>e75ff3d893cf4a10aa5f3d6efaba1026</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{51b7b13c-b42f-41d6-9089-8a5d95836a9f.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>235ff3d893cf4a10aa5f3d6efaba1025</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>275ff3d893cf4a10aa5f3d6efaba1026</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=235ff3d893cf4a10aa5f3d6efaba1025"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=235ff3d893cf4a10aa5f3d6efaba1025"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Item Found Notification Flow">137918b793368610aa5f3d6efaba100c</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>622eabcd-673e-4389-9608-c922b14230c8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>675ff3d893cf4a10aa5f3d6efaba1016</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:29</sys_updated_on>
+        <ui_id>dfc60b15-0932-4026-b4eb-4c3dddee6857</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=675ff3d893cf4a10aa5f3d6efaba1016"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>675ff3d893cf4a10aa5f3d6efaba1016</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>635ff3d893cf4a10aa5f3d6efaba1018</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>675ff3d893cf4a10aa5f3d6efaba1016</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>af5ff3d893cf4a10aa5f3d6efaba1017</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:20:49</sys_updated_on>
+        <value>item_lost=document_passport_id</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=675ff3d893cf4a10aa5f3d6efaba1016"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>675ff3d893cf4a10aa5f3d6efaba1016</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>2f5ff3d893cf4a10aa5f3d6efaba1017</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current.x_1445464_airpor_0_item_lost_table}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>675ff3d893cf4a10aa5f3d6efaba1016</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>a75ff3d893cf4a10aa5f3d6efaba1017</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>675ff3d893cf4a10aa5f3d6efaba1016</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>6b5ff3d893cf4a10aa5f3d6efaba1017</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=675ff3d893cf4a10aa5f3d6efaba1016"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=675ff3d893cf4a10aa5f3d6efaba1016"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Item Found Notification Flow">137918b793368610aa5f3d6efaba100c</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>f6cde657-da9e-4337-962c-55f5203177a2</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>6f5ff3d893cf4a10aa5f3d6efaba100d</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:29</sys_updated_on>
+        <ui_id>4decba1e-c435-4677-9667-13f1d169dd8c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6f5ff3d893cf4a10aa5f3d6efaba100d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6f5ff3d893cf4a10aa5f3d6efaba100d</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>6b5ff3d893cf4a10aa5f3d6efaba100f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6f5ff3d893cf4a10aa5f3d6efaba100d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>a75ff3d893cf4a10aa5f3d6efaba100f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:20:49</sys_updated_on>
+        <value>item_lost=all_other_items</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6f5ff3d893cf4a10aa5f3d6efaba100d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>6f5ff3d893cf4a10aa5f3d6efaba100d</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>275ff3d893cf4a10aa5f3d6efaba100f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current.x_1445464_airpor_0_item_lost_table}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>6f5ff3d893cf4a10aa5f3d6efaba100d</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>af5ff3d893cf4a10aa5f3d6efaba100e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>6f5ff3d893cf4a10aa5f3d6efaba100d</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>635ff3d893cf4a10aa5f3d6efaba100f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6f5ff3d893cf4a10aa5f3d6efaba100d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6f5ff3d893cf4a10aa5f3d6efaba100d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Item Found Notification Flow">137918b793368610aa5f3d6efaba100c</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>f6cde657-da9e-4337-962c-55f5203177a2</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:57</sys_created_on>
+        <sys_id>ab7918b793368610aa5f3d6efaba1080</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:29</sys_updated_on>
+        <ui_id>e3e75a49-0303-48a9-854a-89e81feb9d54</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ab7918b793368610aa5f3d6efaba1080"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ab7918b793368610aa5f3d6efaba1080</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:57</sys_created_on>
+        <sys_id>a77918b793368610aa5f3d6efaba1082</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:57</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ab7918b793368610aa5f3d6efaba1080</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:57</sys_created_on>
+        <sys_id>e37918b793368610aa5f3d6efaba1082</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:57</sys_updated_on>
+        <value>28d8b1af93f64610aa5f3d6efaba1023</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ab7918b793368610aa5f3d6efaba1080"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>notification</field>
+        <id>ab7918b793368610aa5f3d6efaba1080</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:57</sys_created_on>
+        <sys_id>eb7918b793368610aa5f3d6efaba1081</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:57</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>ab7918b793368610aa5f3d6efaba1080</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:57</sys_created_on>
+        <sys_id>637918b793368610aa5f3d6efaba1082</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{4decba1e-c435-4677-9667-13f1d169dd8c.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ab7918b793368610aa5f3d6efaba1080</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:57</sys_created_on>
+        <sys_id>af7918b793368610aa5f3d6efaba1081</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:57</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ab7918b793368610aa5f3d6efaba1080"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ab7918b793368610aa5f3d6efaba1080"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Item Found Notification Flow">137918b793368610aa5f3d6efaba100c</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>622eabcd-673e-4389-9608-c922b14230c8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:57</sys_created_on>
+        <sys_id>e37918b793368610aa5f3d6efaba108d</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:29</sys_updated_on>
+        <ui_id>c6115a0a-9c31-4b61-ab26-09478f8d86d0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e37918b793368610aa5f3d6efaba108d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e37918b793368610aa5f3d6efaba108d</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:57</sys_created_on>
+        <sys_id>2f7918b793368610aa5f3d6efaba108e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:51:02</sys_updated_on>
+        <value>3cea803793f28610aa5f3d6efaba10fc</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e37918b793368610aa5f3d6efaba108d</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:57</sys_created_on>
+        <sys_id>ef7918b793368610aa5f3d6efaba108e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:51:02</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e37918b793368610aa5f3d6efaba108d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>notification</field>
+        <id>e37918b793368610aa5f3d6efaba108d</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:57</sys_created_on>
+        <sys_id>277918b793368610aa5f3d6efaba108e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:57</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>e37918b793368610aa5f3d6efaba108d</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:57</sys_created_on>
+        <sys_id>ab7918b793368610aa5f3d6efaba108e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:51:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{dfc60b15-0932-4026-b4eb-4c3dddee6857.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>e37918b793368610aa5f3d6efaba108d</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:57</sys_created_on>
+        <sys_id>e77918b793368610aa5f3d6efaba108e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:57</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e37918b793368610aa5f3d6efaba108d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e37918b793368610aa5f3d6efaba108d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Item Found Notification Flow">137918b793368610aa5f3d6efaba100c</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>5b6ca9f0-1602-4581-b18e-d53a7e51d827</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>e75ff3d893cf4a10aa5f3d6efaba1007</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:29</sys_updated_on>
+        <ui_id>61c4749e-55bd-4bf2-a5af-edf8367672d6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e75ff3d893cf4a10aa5f3d6efaba1007"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e75ff3d893cf4a10aa5f3d6efaba1007</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>235ff3d893cf4a10aa5f3d6efaba1009</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-24 02:45:03</sys_updated_on>
+        <value>ceff096893878a10aa5f3d6efaba10c6</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e75ff3d893cf4a10aa5f3d6efaba1007</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>e35ff3d893cf4a10aa5f3d6efaba1009</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e75ff3d893cf4a10aa5f3d6efaba1007"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>notification</field>
+        <id>e75ff3d893cf4a10aa5f3d6efaba1007</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>2b5ff3d893cf4a10aa5f3d6efaba1008</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>e75ff3d893cf4a10aa5f3d6efaba1007</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>af5ff3d893cf4a10aa5f3d6efaba1008</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{97a4a6de-9fe4-4918-aaf7-c86801a5edf6.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>e75ff3d893cf4a10aa5f3d6efaba1007</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>eb5ff3d893cf4a10aa5f3d6efaba1008</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e75ff3d893cf4a10aa5f3d6efaba1007"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e75ff3d893cf4a10aa5f3d6efaba1007"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Item Found Notification Flow">137918b793368610aa5f3d6efaba100c</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>5b6ca9f0-1602-4581-b18e-d53a7e51d827</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>ef5fb3d893cf4a10aa5f3d6efaba10fe</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:29</sys_updated_on>
+        <ui_id>97a4a6de-9fe4-4918-aaf7-c86801a5edf6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ef5fb3d893cf4a10aa5f3d6efaba10fe"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ef5fb3d893cf4a10aa5f3d6efaba10fe</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>275ff3d893cf4a10aa5f3d6efaba1001</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:20:48</sys_updated_on>
+        <value>item_lost=smart_phone</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ef5fb3d893cf4a10aa5f3d6efaba10fe</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>eb5ff3d893cf4a10aa5f3d6efaba1001</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ef5fb3d893cf4a10aa5f3d6efaba10fe"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>ef5fb3d893cf4a10aa5f3d6efaba10fe</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>a35ff3d893cf4a10aa5f3d6efaba1001</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current.x_1445464_airpor_0_item_lost_table}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ef5fb3d893cf4a10aa5f3d6efaba10fe</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>2b5ff3d893cf4a10aa5f3d6efaba1000</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>ef5fb3d893cf4a10aa5f3d6efaba10fe</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>ef5ff3d893cf4a10aa5f3d6efaba1000</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ef5fb3d893cf4a10aa5f3d6efaba10fe"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ef5fb3d893cf4a10aa5f3d6efaba10fe"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Item Found Notification Flow">137918b793368610aa5f3d6efaba100c</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>88f4acdb-6029-4db7-ba6c-8f4b0006758a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>ef5ff3d893cf4a10aa5f3d6efaba101e</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:29</sys_updated_on>
+        <ui_id>51b7b13c-b42f-41d6-9089-8a5d95836a9f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ef5ff3d893cf4a10aa5f3d6efaba101e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ef5ff3d893cf4a10aa5f3d6efaba101e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>2b5ff3d893cf4a10aa5f3d6efaba1020</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:20:49</sys_updated_on>
+        <value>item_lost=laptop_computer</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ef5ff3d893cf4a10aa5f3d6efaba101e</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>eb5ff3d893cf4a10aa5f3d6efaba1020</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ef5ff3d893cf4a10aa5f3d6efaba101e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>ef5ff3d893cf4a10aa5f3d6efaba101e</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>a75ff3d893cf4a10aa5f3d6efaba1020</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current.x_1445464_airpor_0_item_lost_table}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ef5ff3d893cf4a10aa5f3d6efaba101e</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>235ff3d893cf4a10aa5f3d6efaba1020</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>ef5ff3d893cf4a10aa5f3d6efaba101e</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 20:50:15</sys_created_on>
+        <sys_id>e35ff3d893cf4a10aa5f3d6efaba1020</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ef5ff3d893cf4a10aa5f3d6efaba101e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ef5ff3d893cf4a10aa5f3d6efaba101e"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=137918b793368610aa5f3d6efaba100c"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=137918b793368610aa5f3d6efaba100c^sys_idNOT IN2f7918b793368610aa5f3d6efaba1041,677918b793368610aa5f3d6efaba1056,e37918b793368610aa5f3d6efaba1046,e77918b793368610aa5f3d6efaba103d"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3e79d4b793368610aa5f3d6efaba1080</block>
+        <comment/>
+        <connected_to>5b6ca9f0-1602-4581-b18e-d53a7e51d827</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Item Found Notification Flow">137918b793368610aa5f3d6efaba100c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>2f7918b793368610aa5f3d6efaba1041</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:29</sys_updated_on>
+        <ui_id>f6cde657-da9e-4337-962c-55f5203177a2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2f7918b793368610aa5f3d6efaba1041"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>2f7918b793368610aa5f3d6efaba1041</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>277918b793368610aa5f3d6efaba1045</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:56</sys_updated_on>
+        <value>Item is Luggage, Clothing or Other Items</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2f7918b793368610aa5f3d6efaba1041"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>2f7918b793368610aa5f3d6efaba1041</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>a37918b793368610aa5f3d6efaba1045</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Updated_1.current.x_1445464_airpor_0_item_reported_lost}}=all_other_items</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>2f7918b793368610aa5f3d6efaba1041</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>ef7918b793368610aa5f3d6efaba1044</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2f7918b793368610aa5f3d6efaba1041"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2f7918b793368610aa5f3d6efaba1041"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3a79d4b793368610aa5f3d6efaba1091</block>
+        <comment/>
+        <connected_to>5b6ca9f0-1602-4581-b18e-d53a7e51d827</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Item Found Notification Flow">137918b793368610aa5f3d6efaba100c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>677918b793368610aa5f3d6efaba1056</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:29</sys_updated_on>
+        <ui_id>88f4acdb-6029-4db7-ba6c-8f4b0006758a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=677918b793368610aa5f3d6efaba1056"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>677918b793368610aa5f3d6efaba1056</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>e37918b793368610aa5f3d6efaba1059</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:56</sys_updated_on>
+        <value>Item is Laptop/Computer</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=677918b793368610aa5f3d6efaba1056"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>677918b793368610aa5f3d6efaba1056</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>637918b793368610aa5f3d6efaba1059</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Updated_1.current.x_1445464_airpor_0_item_reported_lost}}=laptop_computer</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>677918b793368610aa5f3d6efaba1056</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>af7918b793368610aa5f3d6efaba1058</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=677918b793368610aa5f3d6efaba1056"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=677918b793368610aa5f3d6efaba1056"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b279d4b793368610aa5f3d6efaba1089</block>
+        <comment/>
+        <connected_to>5b6ca9f0-1602-4581-b18e-d53a7e51d827</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Item Found Notification Flow">137918b793368610aa5f3d6efaba100c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>e37918b793368610aa5f3d6efaba1046</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:29</sys_updated_on>
+        <ui_id>622eabcd-673e-4389-9608-c922b14230c8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e37918b793368610aa5f3d6efaba1046"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e37918b793368610aa5f3d6efaba1046</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>2b7918b793368610aa5f3d6efaba1055</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:56</sys_updated_on>
+        <value>Item is Document/Passport/ID</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e37918b793368610aa5f3d6efaba1046"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>e37918b793368610aa5f3d6efaba1046</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>a77918b793368610aa5f3d6efaba1055</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Updated_1.current.x_1445464_airpor_0_item_reported_lost}}=document_passport_id</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>e37918b793368610aa5f3d6efaba1046</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>e37918b793368610aa5f3d6efaba1055</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e37918b793368610aa5f3d6efaba1046"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e37918b793368610aa5f3d6efaba1046"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4e562343933ac210aa5f3d6efaba10a3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Item Found Notification Flow">137918b793368610aa5f3d6efaba100c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>e77918b793368610aa5f3d6efaba103d</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:29</sys_updated_on>
+        <ui_id>5b6ca9f0-1602-4581-b18e-d53a7e51d827</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e77918b793368610aa5f3d6efaba103d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e77918b793368610aa5f3d6efaba103d</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>ef7918b793368610aa5f3d6efaba1040</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:56</sys_updated_on>
+        <value>Item is Smart Phone found</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e77918b793368610aa5f3d6efaba103d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>e77918b793368610aa5f3d6efaba103d</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>6f7918b793368610aa5f3d6efaba1040</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:50:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Updated_1.current.x_1445464_airpor_0_item_reported_lost}}=smart_phone</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>e77918b793368610aa5f3d6efaba103d</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>ab7918b793368610aa5f3d6efaba1040</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e77918b793368610aa5f3d6efaba103d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e77918b793368610aa5f3d6efaba103d"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=137918b793368610aa5f3d6efaba100c^sys_idNOT IN737918b793368610aa5f3d6efaba109e,f77918b793368610aa5f3d6efaba109e"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>137918b793368610aa5f3d6efaba100c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.x_1445464_airpor_0_item_lost_table.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:57</sys_created_on>
+        <sys_id>737918b793368610aa5f3d6efaba109e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:57</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8505c528-99a1-4a56-be6f-b24afea44477</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>137918b793368610aa5f3d6efaba100c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.x_1445464_airpor_0_item_lost_table.last_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:57</sys_created_on>
+        <sys_id>f77918b793368610aa5f3d6efaba109e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:57</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>30e408c7-f0a5-463e-88eb-3000569ae53c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=137918b793368610aa5f3d6efaba100c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_137918b793368610aa5f3d6efaba100c^sys_idNOT IN5b7918b793368610aa5f3d6efaba102e,5b7918b793368610aa5f3d6efaba1036,977918b793368610aa5f3d6efaba1026"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_137918b793368610aa5f3d6efaba100c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>5b7918b793368610aa5f3d6efaba102e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Changed Fields</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_137918b793368610aa5f3d6efaba100c_changed_fields_en</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_137918b793368610aa5f3d6efaba100c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>5b7918b793368610aa5f3d6efaba1036</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_137918b793368610aa5f3d6efaba100c_table_name_en</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_137918b793368610aa5f3d6efaba100c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:56</sys_created_on>
+        <sys_id>977918b793368610aa5f3d6efaba1026</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_137918b793368610aa5f3d6efaba100c_current_en</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 14:48:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_137918b793368610aa5f3d6efaba100c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_137918b793368610aa5f3d6efaba100c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_137918b793368610aa5f3d6efaba100c"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>0690ef4b93f6c210aa5f3d6efaba10b6</sys_id>
+        <latest_snapshot>137918b793368610aa5f3d6efaba100c</latest_snapshot>
+        <compiler_build>glide-washingtondc-12-20-2023__patch3-hotfix1-05-12-2024_05-16-2024_0813.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=0690ef4b93f6c210aa5f3d6efaba10b6^sys_idNOT INf77918b793368610aa5f3d6efaba10d0"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerUniqueChange</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"f77918b793368610aa5f3d6efaba10d0","name":"plan","plan_signature":null}}</plan>
+        <plan_id>0690ef4b93f6c210aa5f3d6efaba10b6</plan_id>
+        <snapshot>b610c3dd93cb8e10aa5f3d6efaba10e3</snapshot>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 14:48:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f77918b793368610aa5f3d6efaba10d0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 01:55:30</sys_updated_on>
+        <trigger display_value="">b77918b793368610aa5f3d6efaba10ce</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=0690ef4b93f6c210aa5f3d6efaba10b6"/>
+</record_update>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="item_found_or_not_found" table="var__m_sys_hub_flow_input_a82a73ca93324610aa5f3d6efaba105c" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>item_found_or_not_found</element>
+            <name>var__m_sys_hub_flow_input_a82a73ca93324610aa5f3d6efaba105c</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>erika.truong</sys_created_by>
+            <sys_created_on>2024-06-16 20:56:08</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>item_found_or_not_found</sys_name>
+            <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+            <sys_update_name>sys_choice_var__m_sys_hub_flow_input_a82a73ca93324610aa5f3d6efaba105c_item_found_or_not_found</sys_update_name>
+            <sys_updated_by>erika.truong</sys_updated_by>
+            <sys_updated_on>2024-06-16 20:56:08</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>item_found_or_not_found</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Yes</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_a82a73ca93324610aa5f3d6efaba105c</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>erika.truong</sys_created_by>
+            <sys_created_on>2024-06-16 20:56:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>erika.truong</sys_updated_by>
+            <sys_updated_on>2024-06-16 20:56:08</sys_updated_on>
+            <value>Yes</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>item_found_or_not_found</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_a82a73ca93324610aa5f3d6efaba105c</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>erika.truong</sys_created_by>
+            <sys_created_on>2024-06-16 20:56:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>erika.truong</sys_updated_by>
+            <sys_updated_on>2024-06-16 20:56:08</sys_updated_on>
+            <value>No</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

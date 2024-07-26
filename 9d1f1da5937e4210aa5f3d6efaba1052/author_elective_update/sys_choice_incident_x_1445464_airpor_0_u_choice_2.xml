@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="x_1445464_airpor_0_u_choice_2" table="incident" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>x_1445464_airpor_0_u_choice_2</element>
+            <name>incident</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>erika.truong</sys_created_by>
+            <sys_created_on>2024-06-16 21:29:22</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1445464_airpor_0_u_choice_2</sys_name>
+            <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+            <sys_update_name>sys_choice_incident_x_1445464_airpor_0_u_choice_2</sys_update_name>
+            <sys_updated_by>erika.truong</sys_updated_by>
+            <sys_updated_on>2024-06-16 21:29:22</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_1445464_airpor_0_u_choice_2</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Found</label>
+            <language>en</language>
+            <name>incident</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>erika.truong</sys_created_by>
+            <sys_created_on>2024-06-16 21:29:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>erika.truong</sys_updated_by>
+            <sys_updated_on>2024-06-16 21:29:22</sys_updated_on>
+            <value>found</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_1445464_airpor_0_u_choice_2</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Not Found</label>
+            <language>en</language>
+            <name>incident</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>erika.truong</sys_created_by>
+            <sys_created_on>2024-06-16 21:29:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>erika.truong</sys_updated_by>
+            <sys_updated_on>2024-06-16 21:29:22</sys_updated_on>
+            <value>not found</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

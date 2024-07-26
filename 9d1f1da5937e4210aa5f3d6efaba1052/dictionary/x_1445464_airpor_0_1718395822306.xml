@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b3ef5de5937e4210aa5f3d6efaba103c" extends="sys_import_set_row" label="Airport Lost and Found" max_length="40" name="x_1445464_airpor_0_1718395822306" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Airport Location" label="Airport Location" max_length="40" name="u_airport_location" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Air Tag" label="Air Tag" max_length="40" name="u_air_tag" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Email" label="Email" max_length="40" name="u_email" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=First Name" label="First Name" max_length="40" name="u_first_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Flight Date" label="Flight Date" max_length="40" name="u_flight_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Flight Number" label="Flight Number" max_length="40" name="u_flight_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Item Lost" label="Item Lost" max_length="40" name="u_item_lost" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Last Location Seeing" label="Last Location Seeing" max_length="40" name="u_last_location_seeing" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Last Name" label="Last Name" max_length="40" name="u_last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Phone Number" label="Phone Number" max_length="40" name="u_phone_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Short description" label="Short description" max_length="40" name="u_short_description" type="string"/>
+    </element>
+</database>

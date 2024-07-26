@@ -1,0 +1,2716 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=849878000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Assigning the two tiers when customers report their stolen item(s).</description>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>airport_lost_and_found_tier_assignments</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.email","label":"Trigger - Record Created or Updated➛report Record➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","usedInstances":{"429dcc02-8c27-40e6-b274-fd7138daa790":["record"],"9660cfec-c7a0-4362-b140-a81234005849":["ah_to","record"],"5b483e1e-1411-4bc5-9a02-58300f474584":["record"],"a1c5ac9c-d5ec-4a3d-8b81-97762c2d52a6":["notification"]}},{"name":"60a75fc4-f39b-436a-b837-75d055ef7322.record","label":"3 - Create Record➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.number","label":"Trigger - Record Created or Updated➛report Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","usedInstances":{"9660cfec-c7a0-4362-b140-a81234005849":["undefined"],"97f3a055-b0d0-4ca8-949a-c06fb8fbdd9f":["record"]}},{"name":"Created or Updated_1.current.priority","label":"Trigger - Record Created or Updated➛report Record➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","usedInstances":{"913ea2fd-59d2-4e73-8e99-40a3ab2219f7":["condition"]}},{"name":"Created or Updated_1.table_name","label":"Trigger - Record Created or Updated➛report Table","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"table_name","base_type":"table_name","usedInstances":{"f49b2808-db6f-453d-8a7b-1716d398097f":["table_name"],"a97dfb91-e004-48b2-a01c-96bda85e1ba9":["table_name"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"7d3bc194-ef89-4a14-9003-48e86e204f49":["record"],"e6749d56-70e8-49c2-8854-4615474afd0a":["record"],"10e1c9d7-a5ce-4ad4-a944-665558230a7f":["record"],"5b483e1e-1411-4bc5-9a02-58300f474584":["record"],"a48e7ce5-b480-4a9c-a793-57e89cf54529":["record"],"2fc12b54-85eb-4fba-b4ee-28a5022dafe5":["record"],"752cfddf-0aeb-4994-823a-688ec1072a37":["record"],"abdb6241-6859-4b92-b418-49bfb6d743b5":["record"],"a4f8f7cc-3de3-47d3-88eb-fb10827bc71e":["record"],"4de7313a-85fe-4b3d-a3ee-23998bdc7d71":["record"],"cf94c921-c22b-4957-812f-ec38f73fddb4":["record"],"56cd522e-eb2c-47e8-89bd-c544724e0581":["record"],"4da80bea-292a-4a72-b6ab-d6b1fc911469":["record"],"92dab2ad-2035-48c3-b42c-26b912b652d6":["record"],"2c93993d-41bd-45be-9eb5-b882753c2463":["record"],"4449138c-88ba-49f8-8fcc-e07af9f1c19a":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.item_lost","label":"Trigger - Record Created or Updated➛report Record➛Item Reported Lost","reference":"","reference_display":"Item Reported Lost","type":"choice","base_type":"choice","parent_table_name":"x_1445464_airpor_0_report","column_name":"item_lost","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"used":false,"label":"Laptop / Computer","rawLabel":"Laptop / Computer","selected":false,"missing":false,"image":"","reference":false,"value":"laptop_computer","parameters":{"name":"x_1445464_airpor_0_report"}},{"used":false,"label":"Smart Phone","rawLabel":"Smart Phone","selected":false,"missing":false,"image":"","reference":false,"value":"smart_phone","parameters":{"name":"x_1445464_airpor_0_report"}},{"used":false,"label":"Document / Passport / ID","rawLabel":"Document / Passport / ID","selected":false,"missing":false,"image":"","reference":false,"value":"document_passport_id","parameters":{"name":"x_1445464_airpor_0_report"}},{"used":false,"label":"All Other Items","rawLabel":"All Other Items","selected":false,"missing":false,"image":"","reference":false,"value":"all_other_items","parameters":{"name":"x_1445464_airpor_0_report"}}],"usedInstances":{"fd0d6af4-2dfc-406f-a78f-243b9793fd7f":["condition"],"218659c3-abf8-47f8-a6f7-8f9ceb1c4f05":["condition"],"83a934ee-abae-49f9-ba27-2e624e038aad":["condition"],"9660cfec-c7a0-4362-b140-a81234005849":["ah_subject"],"d4865aff-764c-4d6f-9aac-1b9b47a448fc":["condition"],"764334ec-e9d6-4b8d-b740-b714a4d8c4b9":["condition"],"f0acb85f-76dc-4c59-b683-494b8a1c9bd6":["condition"],"c02a8dd9-3fe9-444a-8fd0-4259d6e92159":["condition"],"2f7e135f-6afa-4a6a-8942-c297f8e28472":["condition"],"4ca2faf1-abc2-4ccc-b30d-fa15bab26660":["condition"],"0261d993-4e01-4ecb-b3ce-8371e21d75cf":["condition"]}},{"name":"Created or Updated_1.current.tier","label":"Trigger - Record Created or Updated➛report Record➛Tier","reference":"","reference_display":"Tier","type":"choice","base_type":"choice","usedInstances":{}},{"name":"Created or Updated_1.current.assignment_grou0","label":"Trigger - Record Created or Updated➛report Record➛assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"7d3bc194-ef89-4a14-9003-48e86e204f49":["record"],"e6749d56-70e8-49c2-8854-4615474afd0a":["record"],"4da80bea-292a-4a72-b6ab-d6b1fc911469":["record"],"a9842131-5aa1-4c52-aae0-221055d7d58c":["record"]}},{"name":"5d13754e-2643-4f6a-92da-4f902dff1a71.record","label":"3 - Create Record➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"ff29dfc3-dce7-43dd-9aaa-f3f159983b54":["record"],"abdb6241-6859-4b92-b418-49bfb6d743b5":["record"],"74c119db-0fd1-4077-be6f-440dcd14c737":["record"]}},{"name":"5d13754e-2643-4f6a-92da-4f902dff1a71.table_name","label":"3 - Create Record➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","usedInstances":{"ebeebe22-41ca-43d0-8711-f7109b8beaeb":["table_name"]}},{"name":"752cfddf-0aeb-4994-823a-688ec1072a37.record","label":"2 - Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"74c119db-0fd1-4077-be6f-440dcd14c737":["record"]}},{"name":"Created or Updated_1.current.item_found_yes_no","label":"Trigger - Record Created or Updated➛report Record➛Item Found (Yes / No)","reference":"","reference_display":"Item Found (Yes / No)","type":"choice","base_type":"choice","usedInstances":{"e9e208f5-6536-4301-b13d-b12fdf318be2":["condition"],"2707ee10-c3df-45ee-8b81-624d0c9b2c5e":["condition"]}},{"name":"429dcc02-8c27-40e6-b274-fd7138daa790.record","label":"5 - Update Record➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"9660cfec-c7a0-4362-b140-a81234005849":["record"]}},{"name":"Created or Updated_1.current.first_name","label":"Trigger - Record Created or Updated➛report Record➛First Name","reference":"","reference_display":"First Name","type":"string","base_type":"string","usedInstances":{"9660cfec-c7a0-4362-b140-a81234005849":["null"]}},{"name":"Created or Updated_1.current.last_name","label":"Trigger - Record Created or Updated➛report Record➛Last Name","reference":"","reference_display":"Last Name","type":"string","base_type":"string","usedInstances":{"9660cfec-c7a0-4362-b140-a81234005849":["null"]}},{"name":"Created or Updated_1.current.assignment_grou0.manager","label":"Trigger - Record Created or Updated➛report Record➛assignment group➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"996d19d7-5087-4c63-a622-e448c7459769":["record"]}}]</label_cache>
+        <master_snapshot>afa1bfc293324610aa5f3d6efaba105b</master_snapshot>
+        <name>Airport Lost and Found Tier Assignments</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>b7a1bfc293324610aa5f3d6efaba10e3</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 18:44:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>32c51a359376c210aa5f3d6efaba1021</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Airport Lost and Found Tier Assignments</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_hub_flow_32c51a359376c210aa5f3d6efaba1021</sys_update_name>
+        <sys_updated_by>richard.castillo</sys_updated_by>
+        <sys_updated_on>2024-07-26 03:25:47</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=32c51a359376c210aa5f3d6efaba1021"/>
+    <sys_variable_value action="delete_multiple" query="document_key=32c51a359376c210aa5f3d6efaba1021"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1445464_airpor_0_report">priority=tier_1^ORpriority=tier_2<item display_value="Tier 1" endquery="false" field="priority" goto="false" newquery="false" operator="=" or="false" value="tier_1"/>
+            <item display_value="Tier 2" endquery="false" field="priority" goto="false" newquery="false" operator="=" or="true" value="tier_2"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-16 20:04:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b7a1bfc293324610aa5f3d6efaba10e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-16 20:04:08</sys_updated_on>
+        <table>x_1445464_airpor_0_report</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>32c51a359376c210aa5f3d6efaba1021</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 14:48:53</sys_created_on>
+        <sys_id>a5dff0c5934f0e10aa5f3d6efaba10ee</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:53</sys_updated_on>
+        <trigger display_value="">b7a1bfc293324610aa5f3d6efaba10e3</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=32c51a359376c210aa5f3d6efaba1021^sys_idNOT INa5dff0c5934f0e10aa5f3d6efaba10ee"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=32c51a359376c210aa5f3d6efaba1021^sys_idNOT INa1a40f71937ac210aa5f3d6efaba1025"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Airport Lost and Found Tier Assignments">32c51a359376c210aa5f3d6efaba1021</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 22:08:53</sys_created_on>
+        <sys_id>a1a40f71937ac210aa5f3d6efaba1025</sys_id>
+        <sys_mod_count>137</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:53</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a1a40f71937ac210aa5f3d6efaba1025"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a1a40f71937ac210aa5f3d6efaba1025</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 22:08:53</sys_created_on>
+        <sys_id>2da40f71937ac210aa5f3d6efaba1026</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 22:08:53</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a1a40f71937ac210aa5f3d6efaba1025</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 22:08:53</sys_created_on>
+        <sys_id>69a40f71937ac210aa5f3d6efaba1026</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-16 14:26:41</sys_updated_on>
+        <value>priority=tier_1^ORpriority=tier_2</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a1a40f71937ac210aa5f3d6efaba1025</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 22:08:53</sys_created_on>
+        <sys_id>a1a40f71937ac210aa5f3d6efaba1026</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 01:12:52</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=a1a40f71937ac210aa5f3d6efaba1025"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=32c51a359376c210aa5f3d6efaba1021"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=32c51a359376c210aa5f3d6efaba1021^sys_idNOT INb6c51a359376c210aa5f3d6efaba1023"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>32c51a359376c210aa5f3d6efaba1021</id>
+        <name>Airport Lost and Found Tier Assignments</name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 18:44:11</sys_created_on>
+        <sys_id>b6c51a359376c210aa5f3d6efaba1023</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 18:44:11</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b6c51a359376c210aa5f3d6efaba1023"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=32c51a359376c210aa5f3d6efaba1021^sys_idNOT IN6e3b163d9376c210aa5f3d6efaba1015,ae3b163d9376c210aa5f3d6efaba100d,e23b56b99376c210aa5f3d6efaba109f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Airport Lost and Found Tier Assignments">32c51a359376c210aa5f3d6efaba1021</model>
+        <model_id>32c51a359376c210aa5f3d6efaba1021</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_32c51a359376c210aa5f3d6efaba1021</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 19:07:55</sys_created_on>
+        <sys_id>6e3b163d9376c210aa5f3d6efaba1015</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 19:07:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6e3b163d9376c210aa5f3d6efaba1015"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Airport Lost and Found Tier Assignments">32c51a359376c210aa5f3d6efaba1021</model>
+        <model_id>32c51a359376c210aa5f3d6efaba1021</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_32c51a359376c210aa5f3d6efaba1021</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 19:07:55</sys_created_on>
+        <sys_id>ae3b163d9376c210aa5f3d6efaba100d</sys_id>
+        <sys_mod_count>76</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ae3b163d9376c210aa5f3d6efaba100d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Airport Lost and Found Tier Assignments">32c51a359376c210aa5f3d6efaba1021</model>
+        <model_id>32c51a359376c210aa5f3d6efaba1021</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_32c51a359376c210aa5f3d6efaba1021</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 19:07:55</sys_created_on>
+        <sys_id>e23b56b99376c210aa5f3d6efaba109f</sys_id>
+        <sys_mod_count>76</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e23b56b99376c210aa5f3d6efaba109f"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=32c51a359376c210aa5f3d6efaba1021"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=32c51a359376c210aa5f3d6efaba1021"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=32c51a359376c210aa5f3d6efaba1021^sys_idNOT IN1cdc547b93368610aa5f3d6efaba10f2,3251a80193cb0e10aa5f3d6efaba1018,3c9ddcfb93368610aa5f3d6efaba102c,3f912c0193cb0e10aa5f3d6efaba1046,49724cec93cf4a10aa5f3d6efaba10b0,c0e570bb93b68610aa5f3d6efaba104b,c1251f4b93b6c210aa5f3d6efaba10f7,d12b3b9b937e0610aa5f3d6efaba10bc"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Airport Lost and Found Tier Assignments">32c51a359376c210aa5f3d6efaba1021</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>f0acb85f-76dc-4c59-b683-494b8a1c9bd6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 15:03:28</sys_created_on>
+        <sys_id>1cdc547b93368610aa5f3d6efaba10f2</sys_id>
+        <sys_mod_count>190</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:51:53</sys_updated_on>
+        <ui_id>ce2ccbec-568d-4740-989d-3d8b46fcd8ed</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1cdc547b93368610aa5f3d6efaba10f2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1cdc547b93368610aa5f3d6efaba10f2</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 15:03:56</sys_created_on>
+        <sys_id>07ec947b93368610aa5f3d6efaba10bf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 15:10:41</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1cdc547b93368610aa5f3d6efaba10f2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 15:03:56</sys_created_on>
+        <sys_id>43ec947b93368610aa5f3d6efaba10bf</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-24 20:00:05</sys_updated_on>
+        <value>assigned_to={"display":"Abel Tuter","value":"62826bf03710200044e0bfc8bcbe5df1","table":"sys_user","sys_id":"62826bf03710200044e0bfc8bcbe5df1"}^x_1445464_airpor_0_item_reported_lost=laptop_computer</value>
+        <variable display_value="Fields">2b575ae253b3230034c6ddeeff7b12fa</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1^id=1cdc547b93368610aa5f3d6efaba10f2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1cdc547b93368610aa5f3d6efaba10f2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1cdc547b93368610aa5f3d6efaba10f2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Airport Lost and Found Tier Assignments">32c51a359376c210aa5f3d6efaba1021</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>0261d993-4e01-4ecb-b3ce-8371e21d75cf</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 12:35:42</sys_created_on>
+        <sys_id>3251a80193cb0e10aa5f3d6efaba1018</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:51:53</sys_updated_on>
+        <ui_id>4449138c-88ba-49f8-8fcc-e07af9f1c19a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3251a80193cb0e10aa5f3d6efaba1018"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3251a80193cb0e10aa5f3d6efaba1018</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 12:36:14</sys_created_on>
+        <sys_id>6271680193cb0e10aa5f3d6efaba1097</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 12:36:14</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3251a80193cb0e10aa5f3d6efaba1018</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 12:36:14</sys_created_on>
+        <sys_id>ae71680193cb0e10aa5f3d6efaba1096</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 12:36:41</sys_updated_on>
+        <value>priority=tier_1</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3251a80193cb0e10aa5f3d6efaba1018"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>3251a80193cb0e10aa5f3d6efaba1018</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 12:36:14</sys_created_on>
+        <sys_id>2e71680193cb0e10aa5f3d6efaba1096</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 12:36:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>3251a80193cb0e10aa5f3d6efaba1018</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 12:36:14</sys_created_on>
+        <sys_id>a671680193cb0e10aa5f3d6efaba1096</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 12:36:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>3251a80193cb0e10aa5f3d6efaba1018</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 12:36:14</sys_created_on>
+        <sys_id>6a71680193cb0e10aa5f3d6efaba1096</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 12:36:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3251a80193cb0e10aa5f3d6efaba1018"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3251a80193cb0e10aa5f3d6efaba1018"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Airport Lost and Found Tier Assignments">32c51a359376c210aa5f3d6efaba1021</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>d4865aff-764c-4d6f-9aac-1b9b47a448fc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 15:06:47</sys_created_on>
+        <sys_id>3c9ddcfb93368610aa5f3d6efaba102c</sys_id>
+        <sys_mod_count>188</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:51:53</sys_updated_on>
+        <ui_id>c60d6751-14f0-4d68-b8c2-cd7d12480c57</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3c9ddcfb93368610aa5f3d6efaba102c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3c9ddcfb93368610aa5f3d6efaba102c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 15:07:17</sys_created_on>
+        <sys_id>18bd90bb93368610aa5f3d6efaba1037</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-24 20:00:33</sys_updated_on>
+        <value>assigned_to={"display":"Erica Eyrich","value":"9e826bf03710200044e0bfc8bcbe5d98","table":"sys_user","sys_id":"9e826bf03710200044e0bfc8bcbe5d98"}^x_1445464_airpor_0_item_reported_lost=all_other_items</value>
+        <variable display_value="Fields">2b575ae253b3230034c6ddeeff7b12fa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3c9ddcfb93368610aa5f3d6efaba102c</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 15:07:17</sys_created_on>
+        <sys_id>d8bd90bb93368610aa5f3d6efaba1037</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 15:10:12</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1^id=3c9ddcfb93368610aa5f3d6efaba102c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3c9ddcfb93368610aa5f3d6efaba102c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3c9ddcfb93368610aa5f3d6efaba102c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Airport Lost and Found Tier Assignments">32c51a359376c210aa5f3d6efaba1021</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>0261d993-4e01-4ecb-b3ce-8371e21d75cf</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 12:36:52</sys_created_on>
+        <sys_id>3f912c0193cb0e10aa5f3d6efaba1046</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:51:53</sys_updated_on>
+        <ui_id>60a32d3e-582b-458a-91c1-7fb1cb170f48</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3f912c0193cb0e10aa5f3d6efaba1046"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3f912c0193cb0e10aa5f3d6efaba1046</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 12:38:55</sys_created_on>
+        <sys_id>7d122c4193cb0e10aa5f3d6efaba1061</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 12:38:55</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3f912c0193cb0e10aa5f3d6efaba1046</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 12:38:55</sys_created_on>
+        <sys_id>b9122c4193cb0e10aa5f3d6efaba1061</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 12:38:55</sys_updated_on>
+        <value>assigned_to={"display":"Colin Altonen","value":"8e826bf03710200044e0bfc8bcbe5d86","table":"sys_user","sys_id":"8e826bf03710200044e0bfc8bcbe5d86"}^x_1445464_airpor_0_item_reported_lost=smart_phone</value>
+        <variable display_value="Fields">2b575ae253b3230034c6ddeeff7b12fa</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1^id=3f912c0193cb0e10aa5f3d6efaba1046"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3f912c0193cb0e10aa5f3d6efaba1046"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3f912c0193cb0e10aa5f3d6efaba1046"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Airport Lost and Found Tier Assignments">32c51a359376c210aa5f3d6efaba1021</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>f0acb85f-76dc-4c59-b683-494b8a1c9bd6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 21:03:43</sys_created_on>
+        <sys_id>49724cec93cf4a10aa5f3d6efaba10b0</sys_id>
+        <sys_mod_count>114</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:51:53</sys_updated_on>
+        <ui_id>2c93993d-41bd-45be-9eb5-b882753c2463</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=49724cec93cf4a10aa5f3d6efaba10b0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>49724cec93cf4a10aa5f3d6efaba10b0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 21:04:32</sys_created_on>
+        <sys_id>30a200ec93cf4a10aa5f3d6efaba1070</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:10:24</sys_updated_on>
+        <value>priority=tier_2</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>49724cec93cf4a10aa5f3d6efaba10b0</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 21:04:32</sys_created_on>
+        <sys_id>f4a200ec93cf4a10aa5f3d6efaba1070</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:04:32</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=49724cec93cf4a10aa5f3d6efaba10b0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>49724cec93cf4a10aa5f3d6efaba10b0</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 21:04:32</sys_created_on>
+        <sys_id>bca200ec93cf4a10aa5f3d6efaba106f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:04:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>49724cec93cf4a10aa5f3d6efaba10b0</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 21:04:32</sys_created_on>
+        <sys_id>34a200ec93cf4a10aa5f3d6efaba106f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:04:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>49724cec93cf4a10aa5f3d6efaba10b0</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 21:04:32</sys_created_on>
+        <sys_id>f8a200ec93cf4a10aa5f3d6efaba106f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:04:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=49724cec93cf4a10aa5f3d6efaba10b0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=49724cec93cf4a10aa5f3d6efaba10b0"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Airport Lost and Found Tier Assignments">32c51a359376c210aa5f3d6efaba1021</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>764334ec-e9d6-4b8d-b740-b714a4d8c4b9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 16:52:57</sys_created_on>
+        <sys_id>c0e570bb93b68610aa5f3d6efaba104b</sys_id>
+        <sys_mod_count>192</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:51:53</sys_updated_on>
+        <ui_id>863d79fa-8935-4d08-8795-1fd60884c2d5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c0e570bb93b68610aa5f3d6efaba104b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c0e570bb93b68610aa5f3d6efaba104b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 16:54:14</sys_created_on>
+        <sys_id>7226fc7b93b68610aa5f3d6efaba1018</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 16:54:14</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c0e570bb93b68610aa5f3d6efaba104b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 16:54:14</sys_created_on>
+        <sys_id>7a26fc7b93b68610aa5f3d6efaba1017</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 12:15:57</sys_updated_on>
+        <value>x_1445464_airpor_0_item_reported_lost=document_passport_id^assigned_to={"display":"Abraham Lincoln","value":"a8f98bb0eb32010045e1a5115206fe3a","table":"sys_user","sys_id":"a8f98bb0eb32010045e1a5115206fe3a"}</value>
+        <variable display_value="Fields">2b575ae253b3230034c6ddeeff7b12fa</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1^id=c0e570bb93b68610aa5f3d6efaba104b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c0e570bb93b68610aa5f3d6efaba104b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c0e570bb93b68610aa5f3d6efaba104b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Airport Lost and Found Tier Assignments">32c51a359376c210aa5f3d6efaba1021</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>764334ec-e9d6-4b8d-b740-b714a4d8c4b9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:33:21</sys_created_on>
+        <sys_id>c1251f4b93b6c210aa5f3d6efaba10f7</sys_id>
+        <sys_mod_count>284</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:51:53</sys_updated_on>
+        <ui_id>4de7313a-85fe-4b3d-a3ee-23998bdc7d71</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c1251f4b93b6c210aa5f3d6efaba10f7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c1251f4b93b6c210aa5f3d6efaba10f7</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:33:42</sys_created_on>
+        <sys_id>02351f4b93b6c210aa5f3d6efaba10f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:33:42</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c1251f4b93b6c210aa5f3d6efaba10f7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:33:42</sys_created_on>
+        <sys_id>4e351f4b93b6c210aa5f3d6efaba10f1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:08:48</sys_updated_on>
+        <value>assign_to={"display":"Abraham Lincoln","value":"a8f98bb0eb32010045e1a5115206fe3a","table":"sys_user","sys_id":"a8f98bb0eb32010045e1a5115206fe3a"}</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c1251f4b93b6c210aa5f3d6efaba10f7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>c1251f4b93b6c210aa5f3d6efaba10f7</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:33:42</sys_created_on>
+        <sys_id>ca351f4b93b6c210aa5f3d6efaba10f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:33:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>c1251f4b93b6c210aa5f3d6efaba10f7</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:33:42</sys_created_on>
+        <sys_id>46351f4b93b6c210aa5f3d6efaba10f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:33:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>c1251f4b93b6c210aa5f3d6efaba10f7</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:33:42</sys_created_on>
+        <sys_id>0a351f4b93b6c210aa5f3d6efaba10f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:33:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c1251f4b93b6c210aa5f3d6efaba10f7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c1251f4b93b6c210aa5f3d6efaba10f7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Airport Lost and Found Tier Assignments">32c51a359376c210aa5f3d6efaba1021</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>d4865aff-764c-4d6f-9aac-1b9b47a448fc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 17:57:52</sys_created_on>
+        <sys_id>d12b3b9b937e0610aa5f3d6efaba10bc</sys_id>
+        <sys_mod_count>204</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:51:53</sys_updated_on>
+        <ui_id>2fc12b54-85eb-4fba-b4ee-28a5022dafe5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d12b3b9b937e0610aa5f3d6efaba10bc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d12b3b9b937e0610aa5f3d6efaba10bc</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 17:58:32</sys_created_on>
+        <sys_id>074b7bdf933e0610aa5f3d6efaba103f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-20 17:58:32</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d12b3b9b937e0610aa5f3d6efaba10bc</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 17:58:32</sys_created_on>
+        <sys_id>434b7bdf933e0610aa5f3d6efaba103f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:09:49</sys_updated_on>
+        <value>priority=tier_1</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d12b3b9b937e0610aa5f3d6efaba10bc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d12b3b9b937e0610aa5f3d6efaba10bc</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 17:58:32</sys_created_on>
+        <sys_id>cf4b7bdf933e0610aa5f3d6efaba103e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-20 17:58:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d12b3b9b937e0610aa5f3d6efaba10bc</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 17:58:32</sys_created_on>
+        <sys_id>4b4b7bdf933e0610aa5f3d6efaba103e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-20 17:58:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>d12b3b9b937e0610aa5f3d6efaba10bc</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 17:58:32</sys_created_on>
+        <sys_id>0f4b7bdf933e0610aa5f3d6efaba103e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-20 17:58:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d12b3b9b937e0610aa5f3d6efaba10bc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d12b3b9b937e0610aa5f3d6efaba10bc"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=32c51a359376c210aa5f3d6efaba1021"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=32c51a359376c210aa5f3d6efaba1021^sys_idNOT IN2e815f8393b6c210aa5f3d6efaba10f7,81f45b0793b6c210aa5f3d6efaba1059,e3f3130b93b6c210aa5f3d6efaba1066,f89f0b4393b6c210aa5f3d6efaba1035"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6b62938793b6c210aa5f3d6efaba100b</block>
+        <comment>When Item Lost is a Luggage, Clothing and Others</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Airport Lost and Found Tier Assignments">32c51a359376c210aa5f3d6efaba1021</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:17:37</sys_created_on>
+        <sys_id>2e815f8393b6c210aa5f3d6efaba10f7</sys_id>
+        <sys_mod_count>153</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:53</sys_updated_on>
+        <ui_id>d4865aff-764c-4d6f-9aac-1b9b47a448fc</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2e815f8393b6c210aa5f3d6efaba10f7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>2e815f8393b6c210aa5f3d6efaba10f7</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:18:34</sys_created_on>
+        <sys_id>68c1134793b6c210aa5f3d6efaba1005</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:19:14</sys_updated_on>
+        <value>When Item Lost is a Luggage, Clothing or other Items</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2e815f8393b6c210aa5f3d6efaba10f7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>2e815f8393b6c210aa5f3d6efaba10f7</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:19:14</sys_created_on>
+        <sys_id>5ae1174793b6c210aa5f3d6efaba10ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:19:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.item_lost}}=all_other_items</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>2e815f8393b6c210aa5f3d6efaba10f7</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:18:34</sys_created_on>
+        <sys_id>e4c1134793b6c210aa5f3d6efaba1005</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:18:34</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2e815f8393b6c210aa5f3d6efaba10f7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2e815f8393b6c210aa5f3d6efaba10f7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a016d3cb93b6c210aa5f3d6efaba1067</block>
+        <comment>When item lost is a Document/Passport/ID</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Airport Lost and Found Tier Assignments">32c51a359376c210aa5f3d6efaba1021</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:32:32</sys_created_on>
+        <sys_id>81f45b0793b6c210aa5f3d6efaba1059</sys_id>
+        <sys_mod_count>163</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:54</sys_updated_on>
+        <ui_id>764334ec-e9d6-4b8d-b740-b714a4d8c4b9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=81f45b0793b6c210aa5f3d6efaba1059"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>81f45b0793b6c210aa5f3d6efaba1059</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:32:57</sys_created_on>
+        <sys_id>97059b4b93b6c210aa5f3d6efaba102a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:32:57</sys_updated_on>
+        <value>When item lost is a Document/Passport/ID</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=81f45b0793b6c210aa5f3d6efaba1059"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>81f45b0793b6c210aa5f3d6efaba1059</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:33:13</sys_created_on>
+        <sys_id>4f15570b93b6c210aa5f3d6efaba107c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:33:13</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.item_lost}}=document_passport_id</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>81f45b0793b6c210aa5f3d6efaba1059</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:32:57</sys_created_on>
+        <sys_id>17059b4b93b6c210aa5f3d6efaba102a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:32:57</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=81f45b0793b6c210aa5f3d6efaba1059"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=81f45b0793b6c210aa5f3d6efaba1059"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a016d3cb93b6c210aa5f3d6efaba105e</block>
+        <comment>When Item lost is a Laptop/Computer</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Airport Lost and Found Tier Assignments">32c51a359376c210aa5f3d6efaba1021</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:28:20</sys_created_on>
+        <sys_id>e3f3130b93b6c210aa5f3d6efaba1066</sys_id>
+        <sys_mod_count>160</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:54</sys_updated_on>
+        <ui_id>f0acb85f-76dc-4c59-b683-494b8a1c9bd6</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e3f3130b93b6c210aa5f3d6efaba1066"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e3f3130b93b6c210aa5f3d6efaba1066</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:28:41</sys_created_on>
+        <sys_id>2414930b93b6c210aa5f3d6efaba108d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:28:41</sys_updated_on>
+        <value>When Item lost is a Laptop/Computer</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e3f3130b93b6c210aa5f3d6efaba1066"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>e3f3130b93b6c210aa5f3d6efaba1066</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:31:05</sys_created_on>
+        <sys_id>73945b0793b6c210aa5f3d6efaba1057</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:31:05</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.item_lost}}=laptop_computer</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>e3f3130b93b6c210aa5f3d6efaba1066</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:28:41</sys_created_on>
+        <sys_id>a014930b93b6c210aa5f3d6efaba108d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:28:41</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e3f3130b93b6c210aa5f3d6efaba1066"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e3f3130b93b6c210aa5f3d6efaba1066"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2f62538793b6c210aa5f3d6efaba10f6</block>
+        <comment>When Item Lost is a Smart Phone</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Airport Lost and Found Tier Assignments">32c51a359376c210aa5f3d6efaba1021</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:09:01</sys_created_on>
+        <sys_id>f89f0b4393b6c210aa5f3d6efaba1035</sys_id>
+        <sys_mod_count>122</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:53</sys_updated_on>
+        <ui_id>0261d993-4e01-4ecb-b3ce-8371e21d75cf</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f89f0b4393b6c210aa5f3d6efaba1035"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>f89f0b4393b6c210aa5f3d6efaba1035</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:09:45</sys_created_on>
+        <sys_id>d7bf438393b6c210aa5f3d6efaba103c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:09:45</sys_updated_on>
+        <value>Item lost is a smart phone</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f89f0b4393b6c210aa5f3d6efaba1035"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>f89f0b4393b6c210aa5f3d6efaba1035</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:13:51</sys_created_on>
+        <sys_id>d7a0978393b6c210aa5f3d6efaba1042</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:13:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.item_lost}}=smart_phone</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>f89f0b4393b6c210aa5f3d6efaba1035</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:09:45</sys_created_on>
+        <sys_id>53bf438393b6c210aa5f3d6efaba103c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:09:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f89f0b4393b6c210aa5f3d6efaba1035"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f89f0b4393b6c210aa5f3d6efaba1035"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=32c51a359376c210aa5f3d6efaba1021"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=32c51a359376c210aa5f3d6efaba1021"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_32c51a359376c210aa5f3d6efaba1021^sys_idNOT IN223b163d9376c210aa5f3d6efaba100a,6a3b163d9376c210aa5f3d6efaba101a,e23b163d9376c210aa5f3d6efaba1012"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_32c51a359376c210aa5f3d6efaba1021</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 19:07:55</sys_created_on>
+        <sys_id>223b163d9376c210aa5f3d6efaba100a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_32c51a359376c210aa5f3d6efaba1021_table_name_en</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 19:07:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_32c51a359376c210aa5f3d6efaba1021</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 19:07:55</sys_created_on>
+        <sys_id>6a3b163d9376c210aa5f3d6efaba101a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Changed Fields</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_32c51a359376c210aa5f3d6efaba1021_changed_fields_en</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 19:07:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_32c51a359376c210aa5f3d6efaba1021</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 19:07:55</sys_created_on>
+        <sys_id>e23b163d9376c210aa5f3d6efaba1012</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_32c51a359376c210aa5f3d6efaba1021_current_en</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 19:07:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_32c51a359376c210aa5f3d6efaba1021"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_32c51a359376c210aa5f3d6efaba1021"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_32c51a359376c210aa5f3d6efaba1021"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Assigning the two tiers when customers report their stolen item(s).</description>
+        <flow_priority/>
+        <internal_name>airport_lost_and_found_tier_assignments</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.email","label":"Trigger - Record Created or Updated➛report Record➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","usedInstances":{"429dcc02-8c27-40e6-b274-fd7138daa790":["record"],"9660cfec-c7a0-4362-b140-a81234005849":["ah_to","record"],"5b483e1e-1411-4bc5-9a02-58300f474584":["record"],"a1c5ac9c-d5ec-4a3d-8b81-97762c2d52a6":["notification"]}},{"name":"60a75fc4-f39b-436a-b837-75d055ef7322.record","label":"3 - Create Record➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.number","label":"Trigger - Record Created or Updated➛report Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","usedInstances":{"9660cfec-c7a0-4362-b140-a81234005849":["undefined"],"97f3a055-b0d0-4ca8-949a-c06fb8fbdd9f":["record"]}},{"name":"Created or Updated_1.current.priority","label":"Trigger - Record Created or Updated➛report Record➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","usedInstances":{"913ea2fd-59d2-4e73-8e99-40a3ab2219f7":["condition"]}},{"name":"Created or Updated_1.table_name","label":"Trigger - Record Created or Updated➛report Table","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"table_name","base_type":"table_name","usedInstances":{"f49b2808-db6f-453d-8a7b-1716d398097f":["table_name"],"a97dfb91-e004-48b2-a01c-96bda85e1ba9":["table_name"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"7d3bc194-ef89-4a14-9003-48e86e204f49":["record"],"e6749d56-70e8-49c2-8854-4615474afd0a":["record"],"10e1c9d7-a5ce-4ad4-a944-665558230a7f":["record"],"5b483e1e-1411-4bc5-9a02-58300f474584":["record"],"a48e7ce5-b480-4a9c-a793-57e89cf54529":["record"],"2fc12b54-85eb-4fba-b4ee-28a5022dafe5":["record"],"752cfddf-0aeb-4994-823a-688ec1072a37":["record"],"abdb6241-6859-4b92-b418-49bfb6d743b5":["record"],"a4f8f7cc-3de3-47d3-88eb-fb10827bc71e":["record"],"4de7313a-85fe-4b3d-a3ee-23998bdc7d71":["record"],"cf94c921-c22b-4957-812f-ec38f73fddb4":["record"],"56cd522e-eb2c-47e8-89bd-c544724e0581":["record"],"4da80bea-292a-4a72-b6ab-d6b1fc911469":["record"],"92dab2ad-2035-48c3-b42c-26b912b652d6":["record"],"2c93993d-41bd-45be-9eb5-b882753c2463":["record"],"4449138c-88ba-49f8-8fcc-e07af9f1c19a":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.item_lost","label":"Trigger - Record Created or Updated➛report Record➛Item Reported Lost","reference":"","reference_display":"Item Reported Lost","type":"choice","base_type":"choice","parent_table_name":"x_1445464_airpor_0_report","column_name":"item_lost","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"used":false,"label":"Laptop / Computer","rawLabel":"Laptop / Computer","selected":false,"missing":false,"image":"","reference":false,"value":"laptop_computer","parameters":{"name":"x_1445464_airpor_0_report"}},{"used":false,"label":"Smart Phone","rawLabel":"Smart Phone","selected":false,"missing":false,"image":"","reference":false,"value":"smart_phone","parameters":{"name":"x_1445464_airpor_0_report"}},{"used":false,"label":"Document / Passport / ID","rawLabel":"Document / Passport / ID","selected":false,"missing":false,"image":"","reference":false,"value":"document_passport_id","parameters":{"name":"x_1445464_airpor_0_report"}},{"used":false,"label":"All Other Items","rawLabel":"All Other Items","selected":false,"missing":false,"image":"","reference":false,"value":"all_other_items","parameters":{"name":"x_1445464_airpor_0_report"}}],"usedInstances":{"fd0d6af4-2dfc-406f-a78f-243b9793fd7f":["condition"],"218659c3-abf8-47f8-a6f7-8f9ceb1c4f05":["condition"],"83a934ee-abae-49f9-ba27-2e624e038aad":["condition"],"9660cfec-c7a0-4362-b140-a81234005849":["ah_subject"],"d4865aff-764c-4d6f-9aac-1b9b47a448fc":["condition"],"764334ec-e9d6-4b8d-b740-b714a4d8c4b9":["condition"],"f0acb85f-76dc-4c59-b683-494b8a1c9bd6":["condition"],"c02a8dd9-3fe9-444a-8fd0-4259d6e92159":["condition"],"2f7e135f-6afa-4a6a-8942-c297f8e28472":["condition"],"4ca2faf1-abc2-4ccc-b30d-fa15bab26660":["condition"],"0261d993-4e01-4ecb-b3ce-8371e21d75cf":["condition"]}},{"name":"Created or Updated_1.current.tier","label":"Trigger - Record Created or Updated➛report Record➛Tier","reference":"","reference_display":"Tier","type":"choice","base_type":"choice","usedInstances":{}},{"name":"Created or Updated_1.current.assignment_grou0","label":"Trigger - Record Created or Updated➛report Record➛assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"7d3bc194-ef89-4a14-9003-48e86e204f49":["record"],"e6749d56-70e8-49c2-8854-4615474afd0a":["record"],"4da80bea-292a-4a72-b6ab-d6b1fc911469":["record"],"a9842131-5aa1-4c52-aae0-221055d7d58c":["record"]}},{"name":"5d13754e-2643-4f6a-92da-4f902dff1a71.record","label":"3 - Create Record➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"ff29dfc3-dce7-43dd-9aaa-f3f159983b54":["record"],"abdb6241-6859-4b92-b418-49bfb6d743b5":["record"],"74c119db-0fd1-4077-be6f-440dcd14c737":["record"]}},{"name":"5d13754e-2643-4f6a-92da-4f902dff1a71.table_name","label":"3 - Create Record➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","usedInstances":{"ebeebe22-41ca-43d0-8711-f7109b8beaeb":["table_name"]}},{"name":"752cfddf-0aeb-4994-823a-688ec1072a37.record","label":"2 - Update Record➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"74c119db-0fd1-4077-be6f-440dcd14c737":["record"]}},{"name":"Created or Updated_1.current.item_found_yes_no","label":"Trigger - Record Created or Updated➛report Record➛Item Found (Yes / No)","reference":"","reference_display":"Item Found (Yes / No)","type":"choice","base_type":"choice","usedInstances":{"e9e208f5-6536-4301-b13d-b12fdf318be2":["condition"],"2707ee10-c3df-45ee-8b81-624d0c9b2c5e":["condition"]}},{"name":"429dcc02-8c27-40e6-b274-fd7138daa790.record","label":"5 - Update Record➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"9660cfec-c7a0-4362-b140-a81234005849":["record"]}},{"name":"Created or Updated_1.current.first_name","label":"Trigger - Record Created or Updated➛report Record➛First Name","reference":"","reference_display":"First Name","type":"string","base_type":"string","usedInstances":{"9660cfec-c7a0-4362-b140-a81234005849":["null"]}},{"name":"Created or Updated_1.current.last_name","label":"Trigger - Record Created or Updated➛report Record➛Last Name","reference":"","reference_display":"Last Name","type":"string","base_type":"string","usedInstances":{"9660cfec-c7a0-4362-b140-a81234005849":["null"]}},{"name":"Created or Updated_1.current.assignment_grou0.manager","label":"Trigger - Record Created or Updated➛report Record➛assignment group➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"996d19d7-5087-4c63-a622-e448c7459769":["record"]}}]</label_cache>
+        <master>true</master>
+        <name>Airport Lost and Found Tier Assignments</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Airport Lost and Found Tier Assignments">32c51a359376c210aa5f3d6efaba1021</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-16 20:04:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>afa1bfc293324610aa5f3d6efaba105b</sys_id>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:52</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=afa1bfc293324610aa5f3d6efaba105b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=afa1bfc293324610aa5f3d6efaba105b"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=afa1bfc293324610aa5f3d6efaba105b^sys_idNOT IN37a1bfc293324610aa5f3d6efaba10b4"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Airport Lost and Found Tier Assignments">afa1bfc293324610aa5f3d6efaba105b</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-16 20:04:08</sys_created_on>
+        <sys_id>37a1bfc293324610aa5f3d6efaba10b4</sys_id>
+        <sys_mod_count>115</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:53</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=37a1bfc293324610aa5f3d6efaba10b4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>37a1bfc293324610aa5f3d6efaba10b4</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-16 20:04:08</sys_created_on>
+        <sys_id>37a1bfc293324610aa5f3d6efaba10b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-16 20:04:08</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>37a1bfc293324610aa5f3d6efaba10b4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-16 20:04:08</sys_created_on>
+        <sys_id>73a1bfc293324610aa5f3d6efaba10b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-16 20:04:08</sys_updated_on>
+        <value>priority=tier_1^ORpriority=tier_2</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>37a1bfc293324610aa5f3d6efaba10b4</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-16 20:04:08</sys_created_on>
+        <sys_id>bfa1bfc293324610aa5f3d6efaba10b5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-22 01:13:55</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=37a1bfc293324610aa5f3d6efaba10b4"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=afa1bfc293324610aa5f3d6efaba105b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=afa1bfc293324610aa5f3d6efaba105b^sys_idNOT IN23a1bfc293324610aa5f3d6efaba105d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>afa1bfc293324610aa5f3d6efaba105b</id>
+        <name>Airport Lost and Found Tier Assignments</name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-16 20:04:07</sys_created_on>
+        <sys_id>23a1bfc293324610aa5f3d6efaba105d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-16 20:04:07</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=23a1bfc293324610aa5f3d6efaba105d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=afa1bfc293324610aa5f3d6efaba105b^sys_idNOT IN27a1bfc293324610aa5f3d6efaba105e,33a1bfc293324610aa5f3d6efaba1084,7fa1bfc293324610aa5f3d6efaba107b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Airport Lost and Found Tier Assignments">afa1bfc293324610aa5f3d6efaba105b</model>
+        <model_id>afa1bfc293324610aa5f3d6efaba105b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_afa1bfc293324610aa5f3d6efaba105b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-16 20:04:07</sys_created_on>
+        <sys_id>27a1bfc293324610aa5f3d6efaba105e</sys_id>
+        <sys_mod_count>75</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=27a1bfc293324610aa5f3d6efaba105e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Airport Lost and Found Tier Assignments">afa1bfc293324610aa5f3d6efaba105b</model>
+        <model_id>afa1bfc293324610aa5f3d6efaba105b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_afa1bfc293324610aa5f3d6efaba105b</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-16 20:04:08</sys_created_on>
+        <sys_id>33a1bfc293324610aa5f3d6efaba1084</sys_id>
+        <sys_mod_count>75</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=33a1bfc293324610aa5f3d6efaba1084"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Airport Lost and Found Tier Assignments">afa1bfc293324610aa5f3d6efaba105b</model>
+        <model_id>afa1bfc293324610aa5f3d6efaba105b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_afa1bfc293324610aa5f3d6efaba105b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-16 20:04:07</sys_created_on>
+        <sys_id>7fa1bfc293324610aa5f3d6efaba107b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-16 21:13:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7fa1bfc293324610aa5f3d6efaba107b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=afa1bfc293324610aa5f3d6efaba105b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=afa1bfc293324610aa5f3d6efaba105b"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=afa1bfc293324610aa5f3d6efaba105b^sys_idNOT IN1022ac4193cb0e10aa5f3d6efaba1064,1822ac4193cb0e10aa5f3d6efaba104f,358e947f93368610aa5f3d6efaba1095,651617cb93b6c210aa5f3d6efaba109b,b9abf7db937e0610aa5f3d6efaba10c7,cd43806093038a10aa5f3d6efaba10bc,d936f0fb93b68610aa5f3d6efaba10d8,f18e947f93368610aa5f3d6efaba109d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Airport Lost and Found Tier Assignments">afa1bfc293324610aa5f3d6efaba105b</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>0261d993-4e01-4ecb-b3ce-8371e21d75cf</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 12:39:05</sys_created_on>
+        <sys_id>1022ac4193cb0e10aa5f3d6efaba1064</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:52</sys_updated_on>
+        <ui_id>60a32d3e-582b-458a-91c1-7fb1cb170f48</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1022ac4193cb0e10aa5f3d6efaba1064"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1022ac4193cb0e10aa5f3d6efaba1064</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 12:39:05</sys_created_on>
+        <sys_id>1422ac4193cb0e10aa5f3d6efaba1065</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 12:39:05</sys_updated_on>
+        <value>assigned_to={"display":"Colin Altonen","value":"8e826bf03710200044e0bfc8bcbe5d86","table":"sys_user","sys_id":"8e826bf03710200044e0bfc8bcbe5d86"}^x_1445464_airpor_0_item_reported_lost=smart_phone</value>
+        <variable display_value="Fields">2b575ae253b3230034c6ddeeff7b12fa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1022ac4193cb0e10aa5f3d6efaba1064</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 12:39:05</sys_created_on>
+        <sys_id>d422ac4193cb0e10aa5f3d6efaba1065</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 12:39:05</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1^id=1022ac4193cb0e10aa5f3d6efaba1064"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1022ac4193cb0e10aa5f3d6efaba1064"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1022ac4193cb0e10aa5f3d6efaba1064"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Airport Lost and Found Tier Assignments">afa1bfc293324610aa5f3d6efaba105b</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>0261d993-4e01-4ecb-b3ce-8371e21d75cf</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 12:39:05</sys_created_on>
+        <sys_id>1822ac4193cb0e10aa5f3d6efaba104f</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:52</sys_updated_on>
+        <ui_id>4449138c-88ba-49f8-8fcc-e07af9f1c19a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1822ac4193cb0e10aa5f3d6efaba104f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1822ac4193cb0e10aa5f3d6efaba104f</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 12:39:05</sys_created_on>
+        <sys_id>1422ac4193cb0e10aa5f3d6efaba1051</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 12:39:05</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1822ac4193cb0e10aa5f3d6efaba104f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 12:39:05</sys_created_on>
+        <sys_id>5022ac4193cb0e10aa5f3d6efaba1051</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 12:39:05</sys_updated_on>
+        <value>priority=tier_1</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1822ac4193cb0e10aa5f3d6efaba104f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>1822ac4193cb0e10aa5f3d6efaba104f</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 12:39:05</sys_created_on>
+        <sys_id>dc22ac4193cb0e10aa5f3d6efaba1050</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 12:39:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>1822ac4193cb0e10aa5f3d6efaba104f</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 12:39:05</sys_created_on>
+        <sys_id>5822ac4193cb0e10aa5f3d6efaba1050</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 12:39:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>1822ac4193cb0e10aa5f3d6efaba104f</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 12:39:05</sys_created_on>
+        <sys_id>1c22ac4193cb0e10aa5f3d6efaba1050</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 12:39:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1822ac4193cb0e10aa5f3d6efaba104f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1822ac4193cb0e10aa5f3d6efaba104f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Airport Lost and Found Tier Assignments">afa1bfc293324610aa5f3d6efaba105b</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>d4865aff-764c-4d6f-9aac-1b9b47a448fc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 15:10:56</sys_created_on>
+        <sys_id>358e947f93368610aa5f3d6efaba1095</sys_id>
+        <sys_mod_count>104</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:52</sys_updated_on>
+        <ui_id>c60d6751-14f0-4d68-b8c2-cd7d12480c57</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=358e947f93368610aa5f3d6efaba1095"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>358e947f93368610aa5f3d6efaba1095</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 15:10:56</sys_created_on>
+        <sys_id>398e947f93368610aa5f3d6efaba1096</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-24 20:00:57</sys_updated_on>
+        <value>assigned_to={"display":"Erica Eyrich","value":"9e826bf03710200044e0bfc8bcbe5d98","table":"sys_user","sys_id":"9e826bf03710200044e0bfc8bcbe5d98"}^x_1445464_airpor_0_item_reported_lost=all_other_items</value>
+        <variable display_value="Fields">2b575ae253b3230034c6ddeeff7b12fa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>358e947f93368610aa5f3d6efaba1095</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 15:10:56</sys_created_on>
+        <sys_id>f98e947f93368610aa5f3d6efaba1096</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 15:10:56</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1^id=358e947f93368610aa5f3d6efaba1095"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=358e947f93368610aa5f3d6efaba1095"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=358e947f93368610aa5f3d6efaba1095"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Airport Lost and Found Tier Assignments">afa1bfc293324610aa5f3d6efaba105b</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>764334ec-e9d6-4b8d-b740-b714a4d8c4b9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>651617cb93b6c210aa5f3d6efaba109b</sys_id>
+        <sys_mod_count>128</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:52</sys_updated_on>
+        <ui_id>4de7313a-85fe-4b3d-a3ee-23998bdc7d71</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=651617cb93b6c210aa5f3d6efaba109b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>651617cb93b6c210aa5f3d6efaba109b</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>611617cb93b6c210aa5f3d6efaba109d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:37:29</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>651617cb93b6c210aa5f3d6efaba109b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>ad1617cb93b6c210aa5f3d6efaba109c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:11:04</sys_updated_on>
+        <value>assign_to={"display":"Abraham Lincoln","value":"a8f98bb0eb32010045e1a5115206fe3a","table":"sys_user","sys_id":"a8f98bb0eb32010045e1a5115206fe3a"}</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=651617cb93b6c210aa5f3d6efaba109b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>651617cb93b6c210aa5f3d6efaba109b</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>2d1617cb93b6c210aa5f3d6efaba109c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:37:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>651617cb93b6c210aa5f3d6efaba109b</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>a51617cb93b6c210aa5f3d6efaba109c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:37:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>651617cb93b6c210aa5f3d6efaba109b</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>691617cb93b6c210aa5f3d6efaba109c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:37:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=651617cb93b6c210aa5f3d6efaba109b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=651617cb93b6c210aa5f3d6efaba109b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Airport Lost and Found Tier Assignments">afa1bfc293324610aa5f3d6efaba105b</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>d4865aff-764c-4d6f-9aac-1b9b47a448fc</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 18:00:06</sys_created_on>
+        <sys_id>b9abf7db937e0610aa5f3d6efaba10c7</sys_id>
+        <sys_mod_count>112</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:52</sys_updated_on>
+        <ui_id>2fc12b54-85eb-4fba-b4ee-28a5022dafe5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b9abf7db937e0610aa5f3d6efaba10c7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b9abf7db937e0610aa5f3d6efaba10c7</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 18:00:06</sys_created_on>
+        <sys_id>b5abf7db937e0610aa5f3d6efaba10c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-20 18:00:06</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b9abf7db937e0610aa5f3d6efaba10c7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 18:00:06</sys_created_on>
+        <sys_id>f1abf7db937e0610aa5f3d6efaba10c9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:11:04</sys_updated_on>
+        <value>priority=tier_1</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b9abf7db937e0610aa5f3d6efaba10c7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>b9abf7db937e0610aa5f3d6efaba10c7</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 18:00:06</sys_created_on>
+        <sys_id>71abf7db937e0610aa5f3d6efaba10c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-20 18:00:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>b9abf7db937e0610aa5f3d6efaba10c7</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 18:00:06</sys_created_on>
+        <sys_id>f9abf7db937e0610aa5f3d6efaba10c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-20 18:00:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>b9abf7db937e0610aa5f3d6efaba10c7</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-20 18:00:06</sys_created_on>
+        <sys_id>bdabf7db937e0610aa5f3d6efaba10c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-20 18:00:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b9abf7db937e0610aa5f3d6efaba10c7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b9abf7db937e0610aa5f3d6efaba10c7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Airport Lost and Found Tier Assignments">afa1bfc293324610aa5f3d6efaba105b</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>f0acb85f-76dc-4c59-b683-494b8a1c9bd6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 21:07:16</sys_created_on>
+        <sys_id>cd43806093038a10aa5f3d6efaba10bc</sys_id>
+        <sys_mod_count>60</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:52</sys_updated_on>
+        <ui_id>2c93993d-41bd-45be-9eb5-b882753c2463</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cd43806093038a10aa5f3d6efaba10bc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cd43806093038a10aa5f3d6efaba10bc</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 21:07:16</sys_created_on>
+        <sys_id>0943806093038a10aa5f3d6efaba10be</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:11:04</sys_updated_on>
+        <value>priority=tier_2</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cd43806093038a10aa5f3d6efaba10bc</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 21:07:16</sys_created_on>
+        <sys_id>8143806093038a10aa5f3d6efaba10cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:07:16</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cd43806093038a10aa5f3d6efaba10bc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>cd43806093038a10aa5f3d6efaba10bc</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 21:07:16</sys_created_on>
+        <sys_id>8543806093038a10aa5f3d6efaba10be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:07:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>cd43806093038a10aa5f3d6efaba10bc</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 21:07:16</sys_created_on>
+        <sys_id>0143806093038a10aa5f3d6efaba10be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:07:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>cd43806093038a10aa5f3d6efaba10bc</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-23 21:07:16</sys_created_on>
+        <sys_id>c143806093038a10aa5f3d6efaba10be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-23 21:07:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cd43806093038a10aa5f3d6efaba10bc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cd43806093038a10aa5f3d6efaba10bc"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Airport Lost and Found Tier Assignments">afa1bfc293324610aa5f3d6efaba105b</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>764334ec-e9d6-4b8d-b740-b714a4d8c4b9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 16:54:24</sys_created_on>
+        <sys_id>d936f0fb93b68610aa5f3d6efaba10d8</sys_id>
+        <sys_mod_count>100</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:52</sys_updated_on>
+        <ui_id>863d79fa-8935-4d08-8795-1fd60884c2d5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d936f0fb93b68610aa5f3d6efaba10d8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d936f0fb93b68610aa5f3d6efaba10d8</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 16:54:24</sys_created_on>
+        <sys_id>9136f0fb93b68610aa5f3d6efaba10da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 16:54:24</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d936f0fb93b68610aa5f3d6efaba10d8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 16:54:24</sys_created_on>
+        <sys_id>dd36f0fb93b68610aa5f3d6efaba10d9</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 12:16:07</sys_updated_on>
+        <value>x_1445464_airpor_0_item_reported_lost=document_passport_id^assigned_to={"display":"Abraham Lincoln","value":"a8f98bb0eb32010045e1a5115206fe3a","table":"sys_user","sys_id":"a8f98bb0eb32010045e1a5115206fe3a"}</value>
+        <variable display_value="Fields">2b575ae253b3230034c6ddeeff7b12fa</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1^id=d936f0fb93b68610aa5f3d6efaba10d8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d936f0fb93b68610aa5f3d6efaba10d8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d936f0fb93b68610aa5f3d6efaba10d8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Airport Lost and Found Tier Assignments">afa1bfc293324610aa5f3d6efaba105b</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>f0acb85f-76dc-4c59-b683-494b8a1c9bd6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 15:10:56</sys_created_on>
+        <sys_id>f18e947f93368610aa5f3d6efaba109d</sys_id>
+        <sys_mod_count>104</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:52</sys_updated_on>
+        <ui_id>ce2ccbec-568d-4740-989d-3d8b46fcd8ed</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f18e947f93368610aa5f3d6efaba109d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f18e947f93368610aa5f3d6efaba109d</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 15:10:56</sys_created_on>
+        <sys_id>b98e947f93368610aa5f3d6efaba109e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-21 15:10:56</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table Name">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f18e947f93368610aa5f3d6efaba109d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-21 15:10:56</sys_created_on>
+        <sys_id>f58e947f93368610aa5f3d6efaba109e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-24 20:00:57</sys_updated_on>
+        <value>assigned_to={"display":"Abel Tuter","value":"62826bf03710200044e0bfc8bcbe5df1","table":"sys_user","sys_id":"62826bf03710200044e0bfc8bcbe5df1"}^x_1445464_airpor_0_item_reported_lost=laptop_computer</value>
+        <variable display_value="Fields">2b575ae253b3230034c6ddeeff7b12fa</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1^id=f18e947f93368610aa5f3d6efaba109d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f18e947f93368610aa5f3d6efaba109d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f18e947f93368610aa5f3d6efaba109d"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=afa1bfc293324610aa5f3d6efaba105b"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=afa1bfc293324610aa5f3d6efaba105b^sys_idNOT IN2d1617cb93b6c210aa5f3d6efaba10ab,611617cb93b6c210aa5f3d6efaba10a8,6d1617cb93b6c210aa5f3d6efaba10a3,e51617cb93b6c210aa5f3d6efaba10af"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a016d3cb93b6c210aa5f3d6efaba105e</block>
+        <comment>When Item lost is a Laptop/Computer</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Airport Lost and Found Tier Assignments">afa1bfc293324610aa5f3d6efaba105b</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>2d1617cb93b6c210aa5f3d6efaba10ab</sys_id>
+        <sys_mod_count>71</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:52</sys_updated_on>
+        <ui_id>f0acb85f-76dc-4c59-b683-494b8a1c9bd6</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2d1617cb93b6c210aa5f3d6efaba10ab"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>2d1617cb93b6c210aa5f3d6efaba10ab</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>a91617cb93b6c210aa5f3d6efaba10ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:37:29</sys_updated_on>
+        <value>When Item lost is a Laptop/Computer</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2d1617cb93b6c210aa5f3d6efaba10ab"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>2d1617cb93b6c210aa5f3d6efaba10ab</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>291617cb93b6c210aa5f3d6efaba10ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:37:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.item_lost}}=laptop_computer</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>2d1617cb93b6c210aa5f3d6efaba10ab</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>651617cb93b6c210aa5f3d6efaba10ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:37:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2d1617cb93b6c210aa5f3d6efaba10ab"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2d1617cb93b6c210aa5f3d6efaba10ab"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6b62938793b6c210aa5f3d6efaba100b</block>
+        <comment>When Item Lost is a Luggage, Clothing and Others</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Airport Lost and Found Tier Assignments">afa1bfc293324610aa5f3d6efaba105b</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>611617cb93b6c210aa5f3d6efaba10a8</sys_id>
+        <sys_mod_count>70</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:52</sys_updated_on>
+        <ui_id>d4865aff-764c-4d6f-9aac-1b9b47a448fc</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=611617cb93b6c210aa5f3d6efaba10a8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>611617cb93b6c210aa5f3d6efaba10a8</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>ed1617cb93b6c210aa5f3d6efaba10aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:37:29</sys_updated_on>
+        <value>When Item Lost is a Luggage, Clothing or other Items</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=611617cb93b6c210aa5f3d6efaba10a8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>611617cb93b6c210aa5f3d6efaba10a8</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>6d1617cb93b6c210aa5f3d6efaba10aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:37:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.item_lost}}=all_other_items</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>611617cb93b6c210aa5f3d6efaba10a8</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>a91617cb93b6c210aa5f3d6efaba10aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:37:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=611617cb93b6c210aa5f3d6efaba10a8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=611617cb93b6c210aa5f3d6efaba10a8"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2f62538793b6c210aa5f3d6efaba10f6</block>
+        <comment>When Item Lost is a Smart Phone</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Airport Lost and Found Tier Assignments">afa1bfc293324610aa5f3d6efaba105b</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>6d1617cb93b6c210aa5f3d6efaba10a3</sys_id>
+        <sys_mod_count>65</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:51</sys_updated_on>
+        <ui_id>0261d993-4e01-4ecb-b3ce-8371e21d75cf</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6d1617cb93b6c210aa5f3d6efaba10a3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>6d1617cb93b6c210aa5f3d6efaba10a3</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>251617cb93b6c210aa5f3d6efaba10a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:37:29</sys_updated_on>
+        <value>Item lost is a smart phone</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6d1617cb93b6c210aa5f3d6efaba10a3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>6d1617cb93b6c210aa5f3d6efaba10a3</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>a11617cb93b6c210aa5f3d6efaba10a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:37:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.item_lost}}=smart_phone</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>6d1617cb93b6c210aa5f3d6efaba10a3</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>ed1617cb93b6c210aa5f3d6efaba10a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:37:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6d1617cb93b6c210aa5f3d6efaba10a3"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6d1617cb93b6c210aa5f3d6efaba10a3"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a016d3cb93b6c210aa5f3d6efaba1067</block>
+        <comment>When item lost is a Document/Passport/ID</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Airport Lost and Found Tier Assignments">afa1bfc293324610aa5f3d6efaba105b</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>e51617cb93b6c210aa5f3d6efaba10af</sys_id>
+        <sys_mod_count>71</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:52</sys_updated_on>
+        <ui_id>764334ec-e9d6-4b8d-b740-b714a4d8c4b9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e51617cb93b6c210aa5f3d6efaba10af"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e51617cb93b6c210aa5f3d6efaba10af</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>651617cb93b6c210aa5f3d6efaba10b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:37:29</sys_updated_on>
+        <value>When item lost is a Document/Passport/ID</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e51617cb93b6c210aa5f3d6efaba10af"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>e51617cb93b6c210aa5f3d6efaba10af</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>e11617cb93b6c210aa5f3d6efaba10b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:37:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.item_lost}}=document_passport_id</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>e51617cb93b6c210aa5f3d6efaba10af</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-19 20:37:29</sys_created_on>
+        <sys_id>211617cb93b6c210aa5f3d6efaba10b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-19 20:37:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e51617cb93b6c210aa5f3d6efaba10af"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e51617cb93b6c210aa5f3d6efaba10af"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=afa1bfc293324610aa5f3d6efaba105b"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=afa1bfc293324610aa5f3d6efaba105b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_afa1bfc293324610aa5f3d6efaba105b^sys_idNOT INafa1bfc293324610aa5f3d6efaba1077,b7a1bfc293324610aa5f3d6efaba1080,b7a1bfc293324610aa5f3d6efaba1088"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_afa1bfc293324610aa5f3d6efaba105b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-16 20:04:07</sys_created_on>
+        <sys_id>afa1bfc293324610aa5f3d6efaba1077</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_afa1bfc293324610aa5f3d6efaba105b_current_en</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-16 20:04:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_afa1bfc293324610aa5f3d6efaba105b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-16 20:04:07</sys_created_on>
+        <sys_id>b7a1bfc293324610aa5f3d6efaba1080</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Changed Fields</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_afa1bfc293324610aa5f3d6efaba105b_changed_fields_en</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-16 20:04:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_afa1bfc293324610aa5f3d6efaba105b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-16 20:04:08</sys_created_on>
+        <sys_id>b7a1bfc293324610aa5f3d6efaba1088</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_afa1bfc293324610aa5f3d6efaba105b_table_name_en</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-16 20:04:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_afa1bfc293324610aa5f3d6efaba105b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_afa1bfc293324610aa5f3d6efaba105b"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_afa1bfc293324610aa5f3d6efaba105b"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>32c51a359376c210aa5f3d6efaba1021</sys_id>
+        <latest_snapshot>afa1bfc293324610aa5f3d6efaba105b</latest_snapshot>
+        <compiler_build>glide-washingtondc-12-20-2023__patch3-hotfix1-05-12-2024_05-16-2024_0813.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=32c51a359376c210aa5f3d6efaba1021^sys_idNOT IN08b1bfc293324610aa5f3d6efaba10e5"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"08b1bfc293324610aa5f3d6efaba10e5","name":"plan","plan_signature":null}}</plan>
+        <plan_id>32c51a359376c210aa5f3d6efaba1021</plan_id>
+        <snapshot>e980c109934f0e10aa5f3d6efaba1068</snapshot>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-16 20:04:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>08b1bfc293324610aa5f3d6efaba10e5</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 14:48:53</sys_updated_on>
+        <trigger display_value="">b7a1bfc293324610aa5f3d6efaba10e3</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=32c51a359376c210aa5f3d6efaba1021"/>
+</record_update>

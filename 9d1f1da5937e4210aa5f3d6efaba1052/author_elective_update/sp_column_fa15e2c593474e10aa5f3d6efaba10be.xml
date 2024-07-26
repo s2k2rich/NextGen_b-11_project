@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <semantic_tag/>
+        <size>12</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">f615e2c593474e10aa5f3d6efaba10bc</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>richard.castillo</sys_created_by>
+        <sys_created_on>2024-06-25 22:11:19</sys_created_on>
+        <sys_id>fa15e2c593474e10aa5f3d6efaba10be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sp_column_fa15e2c593474e10aa5f3d6efaba10be</sys_update_name>
+        <sys_updated_by>richard.castillo</sys_updated_by>
+        <sys_updated_on>2024-06-25 22:11:19</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</application>
+        <file_path/>
+        <instance_id>971b443a1b5af11465324089bd4bcbc8</instance_id>
+        <instance_name>dev207475</instance_name>
+        <name>sp_column_fa15e2c593474e10aa5f3d6efaba10be</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><semantic_tag/><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">f615e2c593474e10aa5f3d6efaba10bc</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>richard.castillo</sys_created_by><sys_created_on>2024-06-25 22:11:19</sys_created_on><sys_id>fa15e2c593474e10aa5f3d6efaba10be</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package><sys_policy/><sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope><sys_update_name>sp_column_fa15e2c593474e10aa5f3d6efaba10be</sys_update_name><sys_updated_by>richard.castillo</sys_updated_by><sys_updated_on>2024-06-25 22:11:19</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>563153507</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>5c988a4d93834e10aa5f3d6efaba104d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>richard.castillo</sys_created_by>
+        <sys_created_on>2024-06-25 22:11:20</sys_created_on>
+        <sys_id>3a15e2c593474e10aa5f3d6efaba10c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1905174133c0000001</sys_recorded_at>
+        <sys_updated_by>richard.castillo</sys_updated_by>
+        <sys_updated_on>2024-06-25 22:11:20</sys_updated_on>
+        <type>Column</type>
+        <update_guid>3e15e2c5b9474e10c500a265c37213bf</update_guid>
+        <update_guid_history>3e15e2c5b9474e10c500a265c37213bf:563153507</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">15566e0993474e10aa5f3d6efaba1054</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>richard.castillo</sys_created_by>
+        <sys_created_on>2024-06-25 22:16:42</sys_created_on>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>4f9447cb24fc40048a9bf222b899f464</sys_id>
+        <sys_metadata>fa15e2c593474e10aa5f3d6efaba10be</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_scope_delete display_value="">2aeb418e182d46c0bed412ac2885a031</sys_scope_delete>
+        <sys_update_name>sp_column_fa15e2c593474e10aa5f3d6efaba10be</sys_update_name>
+        <sys_update_version display_value="sp_column_fa15e2c593474e10aa5f3d6efaba10be">3a15e2c593474e10aa5f3d6efaba10c0</sys_update_version>
+        <sys_updated_by>richard.castillo</sys_updated_by>
+        <sys_updated_on>2024-06-25 22:16:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

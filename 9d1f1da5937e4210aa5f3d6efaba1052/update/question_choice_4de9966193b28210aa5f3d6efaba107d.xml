@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>200</order>
+        <published_ref/>
+        <question display_value="Please choose the item(s) you lost">96395a2193b28210aa5f3d6efaba10f1</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 00:23:36</sys_created_on>
+        <sys_id>4de9966193b28210aa5f3d6efaba107d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Document / Passport / ID</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>question_choice_4de9966193b28210aa5f3d6efaba107d</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-18 14:14:39</sys_updated_on>
+        <text>Document / Passport / ID</text>
+        <value>document_passport_id</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=4de9966193b28210aa5f3d6efaba107d"/>
+</record_update>

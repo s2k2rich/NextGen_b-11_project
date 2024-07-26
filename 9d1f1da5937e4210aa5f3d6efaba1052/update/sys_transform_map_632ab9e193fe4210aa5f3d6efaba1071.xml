@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_map">
+    <sys_transform_map action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <create_new_record_on_empty_coalesce_fields>false</create_new_record_on_empty_coalesce_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name>x_1445464_airpor_0_items_of_lost_and_found_transform_map</name>
+        <order>100</order>
+        <run_business_rules>false</run_business_rules>
+        <run_script>false</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>x_1445464_airpor_0_1718402365401</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-14 22:05:03</sys_created_on>
+        <sys_id>632ab9e193fe4210aa5f3d6efaba1071</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1445464_airpor_0_items_of_lost_and_found_transform_map</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_transform_map_632ab9e193fe4210aa5f3d6efaba1071</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-14 22:05:03</sys_updated_on>
+        <target_table>x_1445464_airpor_0_items_of_lost_and_found</target_table>
+    </sys_transform_map>
+</record_update>

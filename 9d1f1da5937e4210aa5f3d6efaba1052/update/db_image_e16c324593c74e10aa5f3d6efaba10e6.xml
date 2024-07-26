@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>Service Portal</category>
+        <format>png</format>
+        <height>200</height>
+        <image>829cb64593c74e10aa5f3d6efaba101c</image>
+        <name>x_1445464_airpor_0.b6bbfc_sqr_20_opacity.png</name>
+        <size_bytes>573</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>richard.castillo</sys_created_by>
+        <sys_created_on>2024-06-25 23:53:50</sys_created_on>
+        <sys_id>e16c324593c74e10aa5f3d6efaba10e6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_1445464_airpor_0.b6bbfc_sqr_20_opacity.png</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>db_image_e16c324593c74e10aa5f3d6efaba10e6</sys_update_name>
+        <sys_updated_by>richard.castillo</sys_updated_by>
+        <sys_updated_on>2024-06-25 23:53:58</sys_updated_on>
+        <thumbnail/>
+        <width>200</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#b4b9fa</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>image</file_name>
+        <hash>dfe7e4e050f631b340150ad44088a81c76cfd0fa4c84532b7f1d1a31a922e6e2</hash>
+        <image_height>200</image_height>
+        <image_width>200</image_width>
+        <size_bytes>573</size_bytes>
+        <size_compressed>259</size_compressed>
+        <state>available</state>
+        <sys_created_by>richard.castillo</sys_created_by>
+        <sys_created_on>2024-06-25 23:53:57</sys_created_on>
+        <sys_id>829cb64593c74e10aa5f3d6efaba101c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>richard.castillo</sys_updated_by>
+        <sys_updated_on>2024-06-25 23:53:58</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>e16c324593c74e10aa5f3d6efaba10e6</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="829cb64593c74e10aa5f3d6efaba101c">829cb64593c74e10aa5f3d6efaba101c</sys_attachment>
+        <sys_created_by>richard.castillo</sys_created_by>
+        <sys_created_on>2024-06-25 23:53:57</sys_created_on>
+        <sys_id>c29cb64593c74e10aa5f3d6efaba101c</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>6wzwc+flkuJiYGDg9fRwCQLSJ0CYgw1Iro1YNw9IsSV5u7sw/AfBBXuXTwaKcBZ4RBYzMHALgzAjw6w5EkBB9hJPX1f2F2ySQlYSe7++Pw0Uks0MiShxzs/NTc0rYQAB56LUxJLUFIXyzJIMBXdP34AUvVR2BgbGhZ4ujiEVt95eduRlMOBg2Gjo/Xkf/7WKBAbWJVMLTh49X8UuEct5QCFBwIBDgoWHiY2xucHxgAIIExJiaCYsxADVjFcIbgU+oYkMGGJIjsMphOIFHEJoHsUqhBEcWIVID8jGXqkqNRaDC4opLqBY9HT1c1nnlNAEAHUFyxI9AgAA</data>
+        <length>332</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="829cb64593c74e10aa5f3d6efaba101c">829cb64593c74e10aa5f3d6efaba101c</sys_attachment>
+        <sys_created_by>richard.castillo</sys_created_by>
+        <sys_created_on>2024-06-25 23:53:57</sys_created_on>
+        <sys_id>469cb64593c74e10aa5f3d6efaba101c</sys_id>
+    </sys_attachment_doc>
+</record_update>

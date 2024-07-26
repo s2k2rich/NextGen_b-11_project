@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>400</order>
+        <published_ref/>
+        <question display_value="Airport last seeing">e34286a193328210aa5f3d6efaba10b9</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-14 23:16:59</sys_created_on>
+        <sys_id>95aa4a6d93328210aa5f3d6efaba1033</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SMF</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>question_choice_95aa4a6d93328210aa5f3d6efaba1033</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-14 23:16:59</sys_updated_on>
+        <text>SMF</text>
+        <value>smf</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=95aa4a6d93328210aa5f3d6efaba1033"/>
+</record_update>

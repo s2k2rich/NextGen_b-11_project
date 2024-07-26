@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css>.form-signin {
+  padding: 25px 50px !important;
+  color: #fff !important;
+  max-width: 550px;
+}
+
+.forgot-pwd-link {
+  color: #fff !important;
+		&amp;:focus{
+			box-shadow: 0 0 0 0.15rem #FFFFFF;
+		}
+}
+
+.set-login-type-link a {
+  color: #fff !important;
+}
+
+.sp-self-registration {
+    max-width: 550px;
+}
+
+.sp-self-registration,
+.sp-self-registration a {
+    color: #fff !important;
+}
+</css>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">0d1f06c993c34e10aa5f3d6efaba101d</sp_column>
+        <sp_widget display_value="Login">6506d341cb33020000f8d856634c9cdc</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>richard.castillo</sys_created_by>
+        <sys_created_on>2024-06-25 20:35:05</sys_created_on>
+        <sys_id>891f06c993c34e10aa5f3d6efaba1022</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sp_instance_891f06c993c34e10aa5f3d6efaba1022</sys_update_name>
+        <sys_updated_by>richard.castillo</sys_updated_by>
+        <sys_updated_on>2024-06-25 20:35:05</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"show_panel": {
+		"value": false,
+		"displayValue": false
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=891f06c993c34e10aa5f3d6efaba1022"/>
+</record_update>

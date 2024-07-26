@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css>@media (max-width: 767px) {
+  .wrapper-xl {
+    padding: 25px 15px !important;
+  }
+  .text-4x {
+    font-size: 3em;
+  }
+}</css>
+        <glyph/>
+        <id/>
+        <order>0</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">0d1f06c993c34e10aa5f3d6efaba101d</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>richard.castillo</sys_created_by>
+        <sys_created_on>2024-06-25 20:35:05</sys_created_on>
+        <sys_id>811f06c993c34e10aa5f3d6efaba1020</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Welcome to Service Portal - Landing</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sp_instance_811f06c993c34e10aa5f3d6efaba1020</sys_update_name>
+        <sys_updated_by>richard.castillo</sys_updated_by>
+        <sys_updated_on>2024-06-25 20:35:05</sys_updated_on>
+        <title>Welcome to Service Portal - Landing</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<div class=\"wrapper-xl welcome\">\n<h2 class=\"text-white text-4x h1\" role=\"presentation\">${Welcome to the<br /> Service Portal}</h2>\n<h3 class=\"text-white\" role=\"presentation\">${Log in to order things, get help or report an issue}</h3>\n</div>",
+		"displayValue": "<div class=\"wrapper-xl welcome\">\n<h2 class=\"text-white text-4x h1\" role=\"presentation\">${Welcome to the<br /> Service Portal}</h2>\n<h3 class=\"text-white\" role=\"presentation\">${Log in to order things, get help or report an issue}</h3>\n</div>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=811f06c993c34e10aa5f3d6efaba1020"/>
+</record_update>

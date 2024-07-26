@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Report a Lost Item">aacef96d93fe4210aa5f3d6efaba1054</sc_cat_item>
+        <sc_category display_value="Services">109f0438c6112276003ae8ac13e7009d</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-14 22:50:53</sys_created_on>
+        <sys_id>87a40e6593328210aa5f3d6efaba10e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Services.Report a Lost Item</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sc_cat_item_category_87a40e6593328210aa5f3d6efaba10e1</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-14 22:50:53</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</application>
+        <file_path/>
+        <instance_id>971b443a1b5af11465324089bd4bcbc8</instance_id>
+        <instance_name>dev207475</instance_name>
+        <name>sc_cat_item_category_87a40e6593328210aa5f3d6efaba10e1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Report a Lost Item">aacef96d93fe4210aa5f3d6efaba1054</sc_cat_item><sc_category display_value="Services">109f0438c6112276003ae8ac13e7009d</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>erika.truong</sys_created_by><sys_created_on>2024-06-14 22:50:53</sys_created_on><sys_id>87a40e6593328210aa5f3d6efaba10e1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Services.Report a Lost Item</sys_name><sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package><sys_policy/><sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope><sys_update_name>sc_cat_item_category_87a40e6593328210aa5f3d6efaba10e1</sys_update_name><sys_updated_by>erika.truong</sys_updated_by><sys_updated_on>2024-06-14 22:50:53</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>1646886847</payload_hash>
+        <record_name>Services.Report a Lost Item</record_name>
+        <reverted_from/>
+        <source>951f1da5937e4210aa5f3d6efaba1056</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-14 22:50:53</sys_created_on>
+        <sys_id>8ba40e6593328210aa5f3d6efaba10e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19018f257350000001</sys_recorded_at>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-14 22:50:53</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>cba40e655d32821096c288ac1d76b4e4</update_guid>
+        <update_guid_history>cba40e655d32821096c288ac1d76b4e4:1646886847</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">18c4ce6593328210aa5f3d6efaba1036</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-14 22:51:15</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>17723e16b6ee4ceb84efaf2c1674c8a1</sys_id>
+        <sys_metadata>87a40e6593328210aa5f3d6efaba10e1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Services.Report a Lost Item</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_scope_delete display_value="">2aeb418e182d46c0bed412ac2885a031</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_87a40e6593328210aa5f3d6efaba10e1</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_87a40e6593328210aa5f3d6efaba10e1">8ba40e6593328210aa5f3d6efaba10e5</sys_update_version>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-14 22:51:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

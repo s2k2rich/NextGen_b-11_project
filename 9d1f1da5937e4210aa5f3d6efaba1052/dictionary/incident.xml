@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="email_client=true,hasWorkflow=true,live_feed=true,all_tables.query_hints=true" audit="true" db_object_id="3a248d7b8d820210d0ad51af41866369" extends="task" label="Incident" max_length="40" name="incident" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="item_found_yes_no" choice_table="x_1445464_airpor_0_report" dependent="x_1445464_airpor_0_item_found_yes_no" dependent_on_field="x_1445464_airpor_0_item_found_yes_no" label="Did you Find the Item?" max_length="40" name="x_1445464_airpor_0_did_you_find_the_item" type="string" use_dependent_field="true">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="Yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="No"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Item Found (Yes/No)" max_length="40" name="x_1445464_airpor_0_item_found_yes_no" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="Yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="No"/>
+            </choice>
+        </element>
+        <element active="false" attributes="encode_utf8=false" label="Item Lost" max_length="32" name="x_1445464_airpor_0_item_lost" reference="x_1445464_airpor_0_report" type="reference"/>
+        <element attributes="encode_utf8=false" label="Item Lost - Table" max_length="32" name="x_1445464_airpor_0_item_lost_table" reference="x_1445464_airpor_0_report" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="item_lost" choice_table="x_1445464_airpor_0_report" label="Item Reported Lost" max_length="40" name="x_1445464_airpor_0_item_reported_lost" type="string">
+            <choice/>
+        </element>
+        <element attributes="encode_utf8=false" label="Lost And Found Report Number" max_length="32" name="x_1445464_airpor_0_lost_and_found_report_number" reference="x_1445464_airpor_0_report" type="reference"/>
+        <element attributes="encode_utf8=false" label="Report Table" max_length="32" name="x_1445464_airpor_0_report_table" reference="x_1445464_airpor_0_report" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Item Lost" mandatory="true" max_length="40" name="x_1445464_airpor_0_u_choice_2" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Found" sequence="0" value="found"/>
+                <element inactive_on_update="false" label="Not Found" sequence="1" value="not found"/>
+            </choice>
+        </element>
+    </element>
+</database>

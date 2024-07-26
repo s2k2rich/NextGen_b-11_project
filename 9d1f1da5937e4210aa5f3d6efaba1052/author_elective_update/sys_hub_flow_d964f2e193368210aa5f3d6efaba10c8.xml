@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description>Assign lost and found Issues based on Tier.</description>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>lost_and_found_assignment_flow</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"9451a3f9-31e4-4e80-b1b8-b14d882ccdce":["condition"]},"attributes":{}},{"name":"Created or Updated_1.current.item_lost","label":"Trigger - Record Created or Updated➛report Record➛Item Lost","reference":"","reference_display":"Item Lost","type":"choice","base_type":"choice","parent_table_name":"x_1445464_airpor_0_report","column_name":"item_lost","choices":[{"label":"-- None --","missing":false,"image":"","used":false,"rawLabel":"-- None --","selected":false,"reference":false,"value":""},{"missing":false,"image":"","label":"Laptop / Computer","used":false,"rawLabel":"Laptop / Computer","selected":false,"reference":false,"value":"laptop_computer","parameters":{"name":"x_1445464_airpor_0_report"}},{"missing":false,"image":"","label":"Smart Phone","used":false,"rawLabel":"Smart Phone","selected":false,"reference":false,"value":"smart_phone","parameters":{"name":"x_1445464_airpor_0_report"}},{"missing":false,"image":"","label":"Document / Passport / ID","used":false,"rawLabel":"Document / Passport / ID","selected":false,"reference":false,"value":"document_passport_id","parameters":{"name":"x_1445464_airpor_0_report"}},{"missing":false,"image":"","label":"All Other Items","used":false,"rawLabel":"All Other Items","selected":false,"reference":false,"value":"all_other_items","parameters":{"name":"x_1445464_airpor_0_report"}}],"usedInstances":{"9451a3f9-31e4-4e80-b1b8-b14d882ccdce":["condition"]}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Lost and Found Assignment Flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 02:19:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d964f2e193368210aa5f3d6efaba10c8</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Lost and Found Assignment Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_hub_flow_d964f2e193368210aa5f3d6efaba10c8</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 02:52:07</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=d964f2e193368210aa5f3d6efaba10c8"/>
+    <sys_variable_value action="DELETE" query="document_key=d964f2e193368210aa5f3d6efaba10c8"/>
+    <sys_hub_trigger_instance action="DELETE" query="flow=d964f2e193368210aa5f3d6efaba10c8^sys_idNOT INa8d6b6e193368210aa5f3d6efaba10df"/>
+    <sys_hub_trigger_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Lost and Found Assignment Flow">d964f2e193368210aa5f3d6efaba10c8</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 02:29:59</sys_created_on>
+        <sys_id>a8d6b6e193368210aa5f3d6efaba10df</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 02:46:19</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="DELETE" query="document_key=a8d6b6e193368210aa5f3d6efaba10df"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a8d6b6e193368210aa5f3d6efaba10df</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 02:29:59</sys_created_on>
+        <sys_id>28d6b6e193368210aa5f3d6efaba10e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 02:29:59</sys_updated_on>
+        <value>x_1445464_airpor_0_report</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a8d6b6e193368210aa5f3d6efaba10df</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 02:29:59</sys_created_on>
+        <sys_id>2cd6b6e193368210aa5f3d6efaba10e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 02:29:59</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a8d6b6e193368210aa5f3d6efaba10df</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 02:29:59</sys_created_on>
+        <sys_id>64d6b6e193368210aa5f3d6efaba10e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 02:29:59</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=a8d6b6e193368210aa5f3d6efaba10df"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=d964f2e193368210aa5f3d6efaba10c8"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=d964f2e193368210aa5f3d6efaba10c8^sys_idNOT IN1164f2e193368210aa5f3d6efaba10cb"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>d964f2e193368210aa5f3d6efaba10c8</id>
+        <name>Lost and Found Assignment Flow</name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 02:19:24</sys_created_on>
+        <sys_id>1164f2e193368210aa5f3d6efaba10cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 02:19:24</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=1164f2e193368210aa5f3d6efaba10cb"/>
+    <sys_hub_flow_input action="DELETE" query="model=d964f2e193368210aa5f3d6efaba10c8^sys_idNOT IN2f8afea993368210aa5f3d6efaba1029,e38afea993368210aa5f3d6efaba102d,eb8a3e6993368210aa5f3d6efaba1055"/>
+    <sys_complex_object action="DELETE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">7dbaf38ce4d2021008dda4ccc400801f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Lost and Found Assignment Flow">d964f2e193368210aa5f3d6efaba10c8</model>
+        <model_id>d964f2e193368210aa5f3d6efaba10c8</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d964f2e193368210aa5f3d6efaba10c8</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 02:46:18</sys_created_on>
+        <sys_id>2f8afea993368210aa5f3d6efaba1029</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 02:46:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=2f8afea993368210aa5f3d6efaba1029"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Lost and Found Assignment Flow">d964f2e193368210aa5f3d6efaba10c8</model>
+        <model_id>d964f2e193368210aa5f3d6efaba10c8</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d964f2e193368210aa5f3d6efaba10c8</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 02:46:18</sys_created_on>
+        <sys_id>e38afea993368210aa5f3d6efaba102d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 02:46:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=e38afea993368210aa5f3d6efaba102d"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Lost and Found Assignment Flow">d964f2e193368210aa5f3d6efaba10c8</model>
+        <model_id>d964f2e193368210aa5f3d6efaba10c8</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d964f2e193368210aa5f3d6efaba10c8</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 02:46:18</sys_created_on>
+        <sys_id>eb8a3e6993368210aa5f3d6efaba1055</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 02:46:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=eb8a3e6993368210aa5f3d6efaba1055"/>
+    <sys_hub_flow_output action="DELETE" query="model=d964f2e193368210aa5f3d6efaba10c8"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=d964f2e193368210aa5f3d6efaba10c8"/>
+    <sys_hub_action_instance action="DELETE" query="flow=d964f2e193368210aa5f3d6efaba10c8^sys_idNOT INcedbfa2d93368210aa5f3d6efaba1032"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Lost and Found Assignment Flow">d964f2e193368210aa5f3d6efaba10c8</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>9451a3f9-31e4-4e80-b1b8-b14d882ccdce</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 02:51:57</sys_created_on>
+        <sys_id>cedbfa2d93368210aa5f3d6efaba1032</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 02:51:57</sys_updated_on>
+        <ui_id>22843b16-cfa0-4f01-9afd-bbc60aa88bbd</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=cedbfa2d93368210aa5f3d6efaba1032"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1^id=cedbfa2d93368210aa5f3d6efaba1032"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=cedbfa2d93368210aa5f3d6efaba1032"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=cedbfa2d93368210aa5f3d6efaba1032"/>
+    <sys_hub_sub_flow_instance action="DELETE" query="flow=d964f2e193368210aa5f3d6efaba10c8"/>
+    <sys_hub_flow_logic action="DELETE" query="flow=d964f2e193368210aa5f3d6efaba10c8^sys_idNOT IN68d6366193368210aa5f3d6efaba1018"/>
+    <sys_hub_flow_logic action="DELETE">
+        <attributes/>
+        <block display_value="">2b8afea993368210aa5f3d6efaba1039</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Lost and Found Assignment Flow">d964f2e193368210aa5f3d6efaba10c8</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 02:29:59</sys_created_on>
+        <sys_id>68d6366193368210aa5f3d6efaba1018</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 02:51:57</sys_updated_on>
+        <ui_id>9451a3f9-31e4-4e80-b1b8-b14d882ccdce</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=68d6366193368210aa5f3d6efaba1018"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>68d6366193368210aa5f3d6efaba1018</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 02:33:30</sys_created_on>
+        <sys_id>40a7faa593368210aa5f3d6efaba1080</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 02:33:30</sys_updated_on>
+        <value>Item lost is a Computer / Laptop</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=68d6366193368210aa5f3d6efaba1018"/>
+    <sys_element_mapping action="DELETE">
+        <field>condition</field>
+        <id>68d6366193368210aa5f3d6efaba1018</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 02:33:30</sys_created_on>
+        <sys_id>cca7faa593368210aa5f3d6efaba107f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 02:33:30</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current}}={{Created or Updated_1.current.item_lost}}^OR{{Created or Updated_1.current.item_lost}}=laptop_computer</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>condition_name</field>
+        <id>68d6366193368210aa5f3d6efaba1018</id>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 02:33:30</sys_created_on>
+        <sys_id>c4a7faa593368210aa5f3d6efaba107f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 02:33:30</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="DELETE" query="model=68d6366193368210aa5f3d6efaba1018"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=68d6366193368210aa5f3d6efaba1018"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=d964f2e193368210aa5f3d6efaba10c8"/>
+    <sys_hub_flow_variable action="DELETE" query="model=d964f2e193368210aa5f3d6efaba10c8"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_d964f2e193368210aa5f3d6efaba10c8^sys_idNOT IN278afea993368210aa5f3d6efaba102c,2b8afea993368210aa5f3d6efaba1028,a78afea993368210aa5f3d6efaba102f"/>
+    <sys_documentation action="DELETE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d964f2e193368210aa5f3d6efaba10c8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 02:46:18</sys_created_on>
+        <sys_id>278afea993368210aa5f3d6efaba102c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 02:46:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d964f2e193368210aa5f3d6efaba10c8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 02:46:18</sys_created_on>
+        <sys_id>2b8afea993368210aa5f3d6efaba1028</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 02:46:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d964f2e193368210aa5f3d6efaba10c8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 02:46:18</sys_created_on>
+        <sys_id>a78afea993368210aa5f3d6efaba102f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 02:46:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_d964f2e193368210aa5f3d6efaba10c8"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_d964f2e193368210aa5f3d6efaba10c8"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_d964f2e193368210aa5f3d6efaba10c8"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=d964f2e193368210aa5f3d6efaba10c8"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=d964f2e193368210aa5f3d6efaba10c8"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</application>
+        <file_path/>
+        <instance_id>971b443a1b5af11465324089bd4bcbc8</instance_id>
+        <instance_name>dev207475</instance_name>
+        <name>sys_hub_flow_d964f2e193368210aa5f3d6efaba10c8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=integrated,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;25000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build/&gt;&lt;copied_from&gt;9a41b6c2ff12101088e94ee9453bf1a4&lt;/copied_from&gt;&lt;copied_from_name&gt;FlowTemplate_Empty&lt;/copied_from_name&gt;&lt;description&gt;Assign lost and found Issues based on Tier.&lt;/description&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority/&gt;&lt;generation_source/&gt;&lt;internal_name&gt;lost_and_found_assignment_flow&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛report Record","reference":"x_1445464_airpor_0_report","reference_display":"report","type":"reference","base_type":"reference","usedInstances":{"9451a3f9-31e4-4e80-b1b8-b14d882ccdce":["condition"]},"attributes":{}},{"name":"Created or Updated_1.current.item_lost","label":"Trigger - Record Created or Updated➛report Record➛Item Lost","reference":"","reference_display":"Item Lost","type":"choice","base_type":"choice","parent_table_name":"x_1445464_airpor_0_report","column_name":"item_lost","choices":[{"label":"-- None --","missing":false,"image":"","used":false,"rawLabel":"-- None --","selected":false,"reference":false,"value":""},{"missing":false,"image":"","label":"Laptop / Computer","used":false,"rawLabel":"Laptop / Computer","selected":false,"reference":false,"value":"laptop_computer","parameters":{"name":"x_1445464_airpor_0_report"}},{"missing":false,"image":"","label":"Smart Phone","used":false,"rawLabel":"Smart Phone","selected":false,"reference":false,"value":"smart_phone","parameters":{"name":"x_1445464_airpor_0_report"}},{"missing":false,"image":"","label":"Document / Passport / ID","used":false,"rawLabel":"Document / Passport / ID","selected":false,"reference":false,"value":"document_passport_id","parameters":{"name":"x_1445464_airpor_0_report"}},{"missing":false,"image":"","label":"All Other Items","used":false,"rawLabel":"All Other Items","selected":false,"reference":false,"value":"all_other_items","parameters":{"name":"x_1445464_airpor_0_report"}}],"usedInstances":{"9451a3f9-31e4-4e80-b1b8-b14d882ccdce":["condition"]}}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;name&gt;Lost and Found Assignment Flow&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;erika.truong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-15 02:19:24&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d964f2e193368210aa5f3d6efaba10c8&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_name&gt;Lost and Found Assignment Flow&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0"&gt;9d1f1da5937e4210aa5f3d6efaba1052&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Airport Lost and Found"&gt;9d1f1da5937e4210aa5f3d6efaba1052&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_d964f2e193368210aa5f3d6efaba10c8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;erika.truong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-15 02:52:07&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=d964f2e193368210aa5f3d6efaba10c8"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=d964f2e193368210aa5f3d6efaba10c8"/&gt;&lt;sys_hub_trigger_instance action="delete_multiple" query="flow=d964f2e193368210aa5f3d6efaba10c8^sys_idNOT INa8d6b6e193368210aa5f3d6efaba10df"/&gt;&lt;sys_hub_trigger_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Lost and Found Assignment Flow"&gt;d964f2e193368210aa5f3d6efaba10c8&lt;/flow&gt;&lt;name&gt;Created or Updated&lt;/name&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;erika.truong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-15 02:29:59&lt;/sys_created_on&gt;&lt;sys_id&gt;a8d6b6e193368210aa5f3d6efaba10df&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;erika.truong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-15 02:46:19&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Created or Updated"&gt;a45d9180c32222002841b63b12d3aea7&lt;/trigger_definition&gt;&lt;trigger_inputs/&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_create_or_update&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=a8d6b6e193368210aa5f3d6efaba10df"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;a8d6b6e193368210aa5f3d6efaba10df&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;erika.truong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-15 02:29:59&lt;/sys_created_on&gt;&lt;sys_id&gt;28d6b6e193368210aa5f3d6efaba10e1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;erika.truong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-15 02:29:59&lt;/sys_updated_on&gt;&lt;value&gt;x_1445464_airpor_0_report&lt;/value&gt;&lt;variable display_value="Table"&gt;cf1e1980c32222002841b63b12d3aea0&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;a8d6b6e193368210aa5f3d6efaba10df&lt;/document_key&gt;&lt;order&gt;200&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;erika.truong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-15 02:29:59&lt;/sys_created_on&gt;&lt;sys_id&gt;2cd6b6e193368210aa5f3d6efaba10e0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;erika.truong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-15 02:29:59&lt;/sys_updated_on&gt;&lt;value&gt;unique_changes&lt;/value&gt;&lt;variable display_value="Run Trigger"&gt;2b9def50c31132002841b63b12d3ae5b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;a8d6b6e193368210aa5f3d6efaba10df&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;erika.truong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-15 02:29:59&lt;/sys_created_on&gt;&lt;sys_id&gt;64d6b6e193368210aa5f3d6efaba10e1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;erika.truong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-15 02:29:59&lt;/sys_updated_on&gt;&lt;value&gt;^EQ&lt;/value&gt;&lt;variable display_value="Condition"&gt;707dd180c32222002841b63b12d3aecb&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=a8d6b6e193368210aa5f3d6efaba10df"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=d964f2e193368210aa5f3d6efaba10c8"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=d964f2e193368210aa5f3d6efaba10c8^sys_idNOT IN1164f2e193368210aa5f3d6efaba10cb"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;d964f2e193368210aa5f3d6efaba10c8&lt;/id&gt;&lt;name&gt;Lost and Found Assignment Flow&lt;/name&gt;&lt;sys_created_by&gt;erika.truong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-15 02:19:24&lt;/sys_created_on&gt;&lt;sys_id&gt;1164f2e193368210aa5f3d6efaba10cb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;erika.truong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-15 02:19:24&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=1164f2e193368210aa5f3d6efaba10cb"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=d964f2e193368210aa5f3d6efaba10c8^sys_idNOT IN2f8afea993368210aa5f3d6efaba1029,e38afea993368210aa5f3d6efaba102d,eb8a3e6993368210aa5f3d6efaba1055"/&gt;&lt;sys_complex_object action="INSERT_OR_UPDATE"&gt;&lt;label/&gt;&lt;name&gt;FDCollection&lt;/name&gt;&lt;namespace&gt;FlowDesigner&lt;/namespace&gt;&lt;scope_name&gt;global&lt;/scope_name&gt;&lt;serialized_content&gt;{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}&lt;/serialized_content&gt;&lt;sys_class_name&gt;sys_complex_object&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-13 23:19:20&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path/&gt;&lt;sys_id&gt;f4f014150f023300ecf0cc52ff767eed&lt;/sys_id&gt;&lt;sys_mod_count&gt;101&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model"&gt;7dbaf38ce4d2021008dda4ccc400801f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-28 05:06:11&lt;/sys_updated_on&gt;&lt;type&gt;complex_object_collection&lt;/type&gt;&lt;/sys_complex_object&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;model display_value="Lost and Found Assignment Flow"&gt;d964f2e193368210aa5f3d6efaba10c8&lt;/model&gt;&lt;model_id&gt;d964f2e193368210aa5f3d6efaba10c8&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_d964f2e193368210aa5f3d6efaba10c8&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;erika.truong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-15 02:46:18&lt;/sys_created_on&gt;&lt;sys_id&gt;2f8afea993368210aa5f3d6efaba1029&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Airport Lost and Found"&gt;9d1f1da5937e4210aa5f3d6efaba1052&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;erika.truong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-15 02:46:18&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2f8afea993368210aa5f3d6efaba1029"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Lost and Found Assignment Flow"&gt;d964f2e193368210aa5f3d6efaba10c8&lt;/model&gt;&lt;model_id&gt;d964f2e193368210aa5f3d6efaba10c8&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_d964f2e193368210aa5f3d6efaba10c8&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;erika.truong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-15 02:46:18&lt;/sys_created_on&gt;&lt;sys_id&gt;e38afea993368210aa5f3d6efaba102d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Airport Lost and Found"&gt;9d1f1da5937e4210aa5f3d6efaba1052&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;erika.truong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-15 02:46:18&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e38afea993368210aa5f3d6efaba102d"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Lost and Found Assignment Flow"&gt;d964f2e193368210aa5f3d6efaba10c8&lt;/model&gt;&lt;model_id&gt;d964f2e193368210aa5f3d6efaba10c8&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_d964f2e193368210aa5f3d6efaba10c8&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;erika.truong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-15 02:46:18&lt;/sys_created_on&gt;&lt;sys_id&gt;eb8a3e6993368210aa5f3d6efaba1055&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Airport Lost and Found"&gt;9d1f1da5937e4210aa5f3d6efaba1052&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;erika.truong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-15 02:46:18&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=eb8a3e6993368210aa5f3d6efaba1055"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=d964f2e193368210aa5f3d6efaba10c8"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=d964f2e193368210aa5f3d6efaba10c8"/&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=d964f2e193368210aa5f3d6efaba10c8^sys_idNOT INcedbfa2d93368210aa5f3d6efaba1032"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Create Record"&gt;2de05916c31332002841b63b12d3aee1&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Lost and Found Assignment Flow"&gt;d964f2e193368210aa5f3d6efaba10c8&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id&gt;9451a3f9-31e4-4e80-b1b8-b14d882ccdce&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;erika.truong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-15 02:51:57&lt;/sys_created_on&gt;&lt;sys_id&gt;cedbfa2d93368210aa5f3d6efaba1032&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Airport Lost and Found"&gt;9d1f1da5937e4210aa5f3d6efaba1052&lt;/sys_scope&gt;&lt;sys_updated_by&gt;erika.truong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-15 02:51:57&lt;/sys_updated_on&gt;&lt;ui_id&gt;22843b16-cfa0-4f01-9afd-bbc60aa88bbd&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=cedbfa2d93368210aa5f3d6efaba1032"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1^id=cedbfa2d93368210aa5f3d6efaba1032"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=cedbfa2d93368210aa5f3d6efaba1032"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=cedbfa2d93368210aa5f3d6efaba1032"/&gt;&lt;sys_hub_sub_flow_instance action="delete_multiple" query="flow=d964f2e193368210aa5f3d6efaba10c8"/&gt;&lt;sys_hub_flow_logic action="delete_multiple" query="flow=d964f2e193368210aa5f3d6efaba10c8^sys_idNOT IN68d6366193368210aa5f3d6efaba1018"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;2b8afea993368210aa5f3d6efaba1039&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Lost and Found Assignment Flow"&gt;d964f2e193368210aa5f3d6efaba10c8&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;erika.truong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-15 02:29:59&lt;/sys_created_on&gt;&lt;sys_id&gt;68d6366193368210aa5f3d6efaba1018&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Airport Lost and Found"&gt;9d1f1da5937e4210aa5f3d6efaba1052&lt;/sys_scope&gt;&lt;sys_updated_by&gt;erika.truong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-15 02:51:57&lt;/sys_updated_on&gt;&lt;ui_id&gt;9451a3f9-31e4-4e80-b1b8-b14d882ccdce&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=68d6366193368210aa5f3d6efaba1018"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_flow_logic&lt;/document&gt;&lt;document_key&gt;68d6366193368210aa5f3d6efaba1018&lt;/document_key&gt;&lt;order&gt;10&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;erika.truong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-15 02:33:30&lt;/sys_created_on&gt;&lt;sys_id&gt;40a7faa593368210aa5f3d6efaba1080&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;erika.truong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-15 02:33:30&lt;/sys_updated_on&gt;&lt;value&gt;Item lost is a Computer / Laptop&lt;/value&gt;&lt;variable display_value="Condition Label"&gt;f0af19c1c32632002841b63b12d3aea3&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=68d6366193368210aa5f3d6efaba1018"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;condition&lt;/field&gt;&lt;id&gt;68d6366193368210aa5f3d6efaba1018&lt;/id&gt;&lt;sys_created_by&gt;erika.truong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-15 02:33:30&lt;/sys_created_on&gt;&lt;sys_id&gt;cca7faa593368210aa5f3d6efaba107f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;erika.truong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-15 02:33:30&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e&lt;/table&gt;&lt;value&gt;{{Created or Updated_1.current}}={{Created or Updated_1.current.item_lost}}^OR{{Created or Updated_1.current.item_lost}}=laptop_computer&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;condition_name&lt;/field&gt;&lt;id&gt;68d6366193368210aa5f3d6efaba1018&lt;/id&gt;&lt;sys_created_by&gt;erika.truong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-15 02:33:30&lt;/sys_created_on&gt;&lt;sys_id&gt;c4a7faa593368210aa5f3d6efaba107f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;erika.truong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-15 02:33:30&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_flow_logic_ext_input action="delete_multiple" query="model=68d6366193368210aa5f3d6efaba1018"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=68d6366193368210aa5f3d6efaba1018"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=d964f2e193368210aa5f3d6efaba10c8"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=d964f2e193368210aa5f3d6efaba10c8"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_d964f2e193368210aa5f3d6efaba10c8^sys_idNOT IN278afea993368210aa5f3d6efaba102c,2b8afea993368210aa5f3d6efaba1028,a78afea993368210aa5f3d6efaba102f"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_d964f2e193368210aa5f3d6efaba10c8&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;erika.truong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-15 02:46:18&lt;/sys_created_on&gt;&lt;sys_id&gt;278afea993368210aa5f3d6efaba102c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0"&gt;9d1f1da5937e4210aa5f3d6efaba1052&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Airport Lost and Found"&gt;9d1f1da5937e4210aa5f3d6efaba1052&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;erika.truong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-15 02:46:18&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_d964f2e193368210aa5f3d6efaba10c8&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;erika.truong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-15 02:46:18&lt;/sys_created_on&gt;&lt;sys_id&gt;2b8afea993368210aa5f3d6efaba1028&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0"&gt;9d1f1da5937e4210aa5f3d6efaba1052&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Airport Lost and Found"&gt;9d1f1da5937e4210aa5f3d6efaba1052&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;erika.truong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-15 02:46:18&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_d964f2e193368210aa5f3d6efaba10c8&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;erika.truong&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-15 02:46:18&lt;/sys_created_on&gt;&lt;sys_id&gt;a78afea993368210aa5f3d6efaba102f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0"&gt;9d1f1da5937e4210aa5f3d6efaba1052&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Airport Lost and Found"&gt;9d1f1da5937e4210aa5f3d6efaba1052&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;erika.truong&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-15 02:46:18&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_d964f2e193368210aa5f3d6efaba10c8"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_d964f2e193368210aa5f3d6efaba10c8"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_d964f2e193368210aa5f3d6efaba10c8"/&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=d964f2e193368210aa5f3d6efaba10c8"/&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=d964f2e193368210aa5f3d6efaba10c8"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-499665299</payload_hash>
+        <record_name>Lost and Found Assignment Flow</record_name>
+        <reverted_from/>
+        <source>951f1da5937e4210aa5f3d6efaba1056</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 02:52:08</sys_created_on>
+        <sys_id>fcebfa2d93368210aa5f3d6efaba10fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19019cf34a50000001</sys_recorded_at>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 02:52:08</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>b4ebfa2d40368210f7dcd876155ee7fd</update_guid>
+        <update_guid_history>b4ebfa2d40368210f7dcd876155ee7fd:-499665299,c6bb3a2df5368210d1cb2b8949d7196a:310876750,ff8afea901368210436219a98ef6b673:-106964987,fb8afea93f368210d21082430ad9d951:-1319638281,1c6afaa9643682109a5cf668d59c754c:1888410524,4029b269e03682106eb48875990df73d:542080264,5bc73ae58d368210e34f95d3a9833885:1284058525,5ec73ae58836821038ccdde9ea81da4e:-1377938504,5aa776e551368210b379eff44c4b59bd:1434854907,fb77b2e574368210492dac05e8774102:1612498107,bb6732e577368210b7f3d77c2abc8cd5:-548253657,83d636a57b368210441a4556f65e3eac:25287917,1d64f2e14436821080bf1add4785f3ce:-769373823</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-15 18:41:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>8e5777897fa645b8ad8b9ecc5164d424</sys_id>
+        <sys_metadata>d964f2e193368210aa5f3d6efaba10c8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Lost and Found Assignment Flow</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_scope_delete display_value="">2aeb418e182d46c0bed412ac2885a031</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_d964f2e193368210aa5f3d6efaba10c8</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_d964f2e193368210aa5f3d6efaba10c8">fcebfa2d93368210aa5f3d6efaba10fd</sys_update_version>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-15 18:41:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

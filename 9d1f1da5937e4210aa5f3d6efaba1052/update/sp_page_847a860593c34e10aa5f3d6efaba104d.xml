@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>other</category>
+        <css>section.page {
+	background-color: $sp-homepage-bg;
+}
+section.page, main.body {
+    padding-top: 0px !important;
+}
+
+.bg-img-for-col-1{
+background-size: 100%;
+background-image: url(x_1445464_airpor_0.b6bbfc_sqr_20_opacity.png);
+background-position: right;
+}
+.bg-img-for-col-2{
+background-size:100%;
+background-image: url(x_1445464_airpor_0.a6a6a6_sqr.png);
+background-position: center;
+}
+.bg-img-for-col-3{
+background-size: 100%;
+background-image: url(laf_logo_1000x_transparent-_3.png);
+background-position: center;
+}
+
+.bg-img-for-col-4{
+background-size: 100%;
+background-image: url(x_1445464_airpor_0.b6bbfc_sqr.png);
+background-position: center;
+}
+</css>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <human_readable_url_structure/>
+        <id>lost_found_index</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>false</public>
+        <roles/>
+        <seo_script/>
+        <short_description>Lost and found index page</short_description>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>richard.castillo</sys_created_by>
+        <sys_created_on>2024-06-25 20:14:49</sys_created_on>
+        <sys_id>847a860593c34e10aa5f3d6efaba104d</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>lost_found_index</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sp_page_847a860593c34e10aa5f3d6efaba104d</sys_update_name>
+        <sys_updated_by>richard.castillo</sys_updated_by>
+        <sys_updated_on>2024-06-28 05:59:57</sys_updated_on>
+        <title>Lost and Found</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=847a860593c34e10aa5f3d6efaba104d"/>
+</record_update>

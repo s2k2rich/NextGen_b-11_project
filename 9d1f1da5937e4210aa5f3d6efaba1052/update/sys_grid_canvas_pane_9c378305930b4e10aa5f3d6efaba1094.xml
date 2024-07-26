@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="New Tab 1">0ab64ecd93834e10aa5f3d6efaba1006</grid_canvas>
+        <height>18</height>
+        <portal_widget display_value="Created 06-25-2024 17:40:15">cc37cb81930b4e10aa5f3d6efaba10f4</portal_widget>
+        <posx>0</posx>
+        <posy>0</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-26 00:40:15</sys_created_on>
+        <sys_id>9c378305930b4e10aa5f3d6efaba1094</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>0ab64ecd93834e10aa5f3d6efaba1006</sys_name>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_9c378305930b4e10aa5f3d6efaba1094</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-26 00:45:12</sys_updated_on>
+        <width>6</width>
+    </sys_grid_canvas_pane>
+</record_update>

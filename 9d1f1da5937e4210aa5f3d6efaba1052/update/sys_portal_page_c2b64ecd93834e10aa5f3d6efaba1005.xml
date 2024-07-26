@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2024-07-26 07:42:44">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout/>
+        <order/>
+        <read_roles/>
+        <roles/>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>erika.truong</sys_created_by>
+        <sys_created_on>2024-06-25 19:58:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c2b64ecd93834e10aa5f3d6efaba1005</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Tab 1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+        <sys_update_name>sys_portal_page_c2b64ecd93834e10aa5f3d6efaba1005</sys_update_name>
+        <sys_updated_by>erika.truong</sys_updated_by>
+        <sys_updated_on>2024-06-25 19:58:34</sys_updated_on>
+        <title>New Tab 1</title>
+        <user/>
+        <view>new_tab_1</view>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="New Tab 1">c2b64ecd93834e10aa5f3d6efaba1005</page>
+                <summary>Bar on report table by Priority created by Erika Truong: 2024-06-25 17:37:50</summary>
+                <sys_created_by>erika.truong</sys_created_by>
+                <sys_created_on>2024-06-26 00:40:15</sys_created_on>
+                <sys_id>cc37cb81930b4e10aa5f3d6efaba10f4</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>erika.truong</sys_updated_by>
+                <sys_updated_on>2024-06-26 00:40:15</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 06-25-2024 17:40:15">cc37cb81930b4e10aa5f3d6efaba10f4</portal_section>
+                        <sys_created_by>erika.truong</sys_created_by>
+                        <sys_created_on>2024-06-26 00:40:15</sys_created_on>
+                        <sys_id>1837cb81930b4e10aa5f3d6efaba10f6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>erika.truong</sys_updated_by>
+                        <sys_updated_on>2024-06-26 00:40:15</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 06-25-2024 17:40:15">cc37cb81930b4e10aa5f3d6efaba10f4</portal_section>
+                        <sys_created_by>erika.truong</sys_created_by>
+                        <sys_created_on>2024-06-26 00:40:15</sys_created_on>
+                        <sys_id>4437cb81930b4e10aa5f3d6efaba10f5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>erika.truong</sys_updated_by>
+                        <sys_updated_on>2024-06-26 00:40:15</sys_updated_on>
+                        <value>a62743c1930b4e10aa5f3d6efaba108b</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_publish</name>
+                        <portal_section display_value="Created 06-25-2024 17:40:15">cc37cb81930b4e10aa5f3d6efaba10f4</portal_section>
+                        <sys_created_by>erika.truong</sys_created_by>
+                        <sys_created_on>2024-06-26 00:40:15</sys_created_on>
+                        <sys_id>5437cb81930b4e10aa5f3d6efaba10f6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>erika.truong</sys_updated_by>
+                        <sys_updated_on>2024-06-26 00:40:15</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 06-25-2024 17:40:15">cc37cb81930b4e10aa5f3d6efaba10f4</portal_section>
+                        <sys_created_by>erika.truong</sys_created_by>
+                        <sys_created_on>2024-06-26 00:40:15</sys_created_on>
+                        <sys_id>5837cb81930b4e10aa5f3d6efaba10f7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>erika.truong</sys_updated_by>
+                        <sys_updated_on>2024-06-26 00:40:15</sys_updated_on>
+                        <value/>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 06-25-2024 17:40:15">cc37cb81930b4e10aa5f3d6efaba10f4</portal_section>
+                        <sys_created_by>erika.truong</sys_created_by>
+                        <sys_created_on>2024-06-26 00:40:15</sys_created_on>
+                        <sys_id>8037cb81930b4e10aa5f3d6efaba10f6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>erika.truong</sys_updated_by>
+                        <sys_updated_on>2024-06-26 00:40:15</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 06-25-2024 17:40:15">cc37cb81930b4e10aa5f3d6efaba10f4</portal_section>
+                        <sys_created_by>erika.truong</sys_created_by>
+                        <sys_created_on>2024-06-26 00:40:15</sys_created_on>
+                        <sys_id>9c37cb81930b4e10aa5f3d6efaba10f6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>erika.truong</sys_updated_by>
+                        <sys_updated_on>2024-06-26 00:40:15</sys_updated_on>
+                        <value>Bar on report table by Priority created by Erika Truong: 2024-06-25 17:37:50</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 06-25-2024 17:40:15">cc37cb81930b4e10aa5f3d6efaba10f4</portal_section>
+                        <sys_created_by>erika.truong</sys_created_by>
+                        <sys_created_on>2024-06-26 00:40:15</sys_created_on>
+                        <sys_id>cc37cb81930b4e10aa5f3d6efaba10f5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>erika.truong</sys_updated_by>
+                        <sys_updated_on>2024-06-26 00:40:15</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 06-25-2024 17:40:15">cc37cb81930b4e10aa5f3d6efaba10f4</portal_section>
+                        <sys_created_by>erika.truong</sys_created_by>
+                        <sys_created_on>2024-06-26 00:40:15</sys_created_on>
+                        <sys_id>d837cb81930b4e10aa5f3d6efaba10f6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>erika.truong</sys_updated_by>
+                        <sys_updated_on>2024-06-26 00:40:15</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="New Tab 1">c2b64ecd93834e10aa5f3d6efaba1005</page>
+                <summary>Report table by Item Reported Lost</summary>
+                <sys_created_by>erika.truong</sys_created_by>
+                <sys_created_on>2024-06-25 19:58:58</sys_created_on>
+                <sys_id>f7c6860193c34e10aa5f3d6efaba10de</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>erika.truong</sys_updated_by>
+                <sys_updated_on>2024-06-25 19:58:58</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 06-25-2024 12:58:58">f7c6860193c34e10aa5f3d6efaba10de</portal_section>
+                        <sys_created_by>erika.truong</sys_created_by>
+                        <sys_created_on>2024-06-25 19:58:58</sys_created_on>
+                        <sys_id>37c6860193c34e10aa5f3d6efaba10e0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>erika.truong</sys_updated_by>
+                        <sys_updated_on>2024-06-25 19:58:58</sys_updated_on>
+                        <value>Report table by Item Reported Lost</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 06-25-2024 12:58:58">f7c6860193c34e10aa5f3d6efaba10de</portal_section>
+                        <sys_created_by>erika.truong</sys_created_by>
+                        <sys_created_on>2024-06-25 19:58:58</sys_created_on>
+                        <sys_id>3bc6860193c34e10aa5f3d6efaba10df</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>erika.truong</sys_updated_by>
+                        <sys_updated_on>2024-06-25 19:58:58</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 06-25-2024 12:58:58">f7c6860193c34e10aa5f3d6efaba10de</portal_section>
+                        <sys_created_by>erika.truong</sys_created_by>
+                        <sys_created_on>2024-06-25 19:58:58</sys_created_on>
+                        <sys_id>73c6860193c34e10aa5f3d6efaba10e0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>erika.truong</sys_updated_by>
+                        <sys_updated_on>2024-06-25 19:58:58</sys_updated_on>
+                        <value>pie</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 06-25-2024 12:58:58">f7c6860193c34e10aa5f3d6efaba10de</portal_section>
+                        <sys_created_by>erika.truong</sys_created_by>
+                        <sys_created_on>2024-06-25 19:58:58</sys_created_on>
+                        <sys_id>bfc6860193c34e10aa5f3d6efaba10de</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>erika.truong</sys_updated_by>
+                        <sys_updated_on>2024-06-25 19:58:58</sys_updated_on>
+                        <value>5078427c938fca10aa5f3d6efaba104e</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 06-25-2024 12:58:58">f7c6860193c34e10aa5f3d6efaba10de</portal_section>
+                        <sys_created_by>erika.truong</sys_created_by>
+                        <sys_created_on>2024-06-25 19:58:58</sys_created_on>
+                        <sys_id>bfc6860193c34e10aa5f3d6efaba10df</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>erika.truong</sys_updated_by>
+                        <sys_updated_on>2024-06-25 19:58:58</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 06-25-2024 12:58:58">f7c6860193c34e10aa5f3d6efaba10de</portal_section>
+                        <sys_created_by>erika.truong</sys_created_by>
+                        <sys_created_on>2024-06-25 19:58:58</sys_created_on>
+                        <sys_id>fbc6860193c34e10aa5f3d6efaba10df</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>erika.truong</sys_updated_by>
+                        <sys_updated_on>2024-06-25 19:58:58</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>

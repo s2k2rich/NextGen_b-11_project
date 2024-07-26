@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="New Section" section_id="c374c01e93724610aa5f3d6efaba10d3" sys_domain="global" table="incident" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>0</position>
+            <sys_created_by>erika.truong</sys_created_by>
+            <sys_created_on>2024-06-16 21:26:17</sys_created_on>
+            <sys_id>1374041e93724610aa5f3d6efaba1086</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="incident" sys_domain="global" view="Default view">c374c01e93724610aa5f3d6efaba10d3</sys_ui_section>
+            <sys_updated_by>erika.truong</sys_updated_by>
+            <sys_updated_on>2024-06-16 21:26:17</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>New Section</caption>
+            <header>false</header>
+            <name>incident</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>erika.truong</sys_created_by>
+            <sys_created_on>2024-06-16 21:26:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c374c01e93724610aa5f3d6efaba10d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>incident</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Airport Lost and Found" source="x_1445464_airpor_0">9d1f1da5937e4210aa5f3d6efaba1052</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Airport Lost and Found">9d1f1da5937e4210aa5f3d6efaba1052</sys_scope>
+            <sys_update_name>sys_ui_section_c374c01e93724610aa5f3d6efaba10d3</sys_update_name>
+            <sys_updated_by>erika.truong</sys_updated_by>
+            <sys_updated_on>2024-06-16 21:26:17</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="47c19ea593728210aa5f3d6efaba107d" label="report" max_length="40" name="x_1445464_airpor_0_report" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Airport Location" max_length="40" name="airport_location" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="SFO" sequence="0" value="sfo"/>
+                <element inactive_on_update="false" label="SJC" sequence="1" value="sjc"/>
+                <element inactive_on_update="false" label="OAK" sequence="2" value="oak"/>
+                <element inactive_on_update="false" label="SMF" sequence="3" value="smf"/>
+            </choice>
+        </element>
+        <element label="Air Tag" max_length="40" name="air_tag" type="boolean"/>
+        <element label="Approval" max_length="40" name="approval" type="string"/>
+        <element label="Approval History" max_length="40" name="approval_history" type="string"/>
+        <element choice="1" label="Approval (Yes/No)" max_length="40" name="approval_yes_no" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element label="assignment group" max_length="32" name="assignment_grou0" reference="sys_user_group" type="reference"/>
+        <element label="Assign to" max_length="32" name="assign_to" reference="sys_user" type="reference"/>
+        <element choice_field="item_found_yes_no" choice_table="x_1445464_airpor_0_report" label="Submitter email" max_length="40" name="email" type="string" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" label="First Name" max_length="40" name="first_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Flight Date" max_length="40" name="flight_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Flight Number" max_length="40" name="flight_number" type="string"/>
+        <element choice="1" label="Item Found (Yes / No)" max_length="40" name="item_found_yes_no" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="item_lost" choice_table="x_1445464_airpor_0_report" label="Item Reported Lost" max_length="40" name="item_lost" type="choice">
+            <choice>
+                <element dependent_value="laptop_computer" inactive_on_update="false" label="Laptop / Computer" sequence="0" value="laptop_computer"/>
+                <element dependent_value="laptop_computer" inactive_on_update="false" label="Smart Phone" sequence="1" value="smart_phone"/>
+                <element dependent_value="laptop_computer" inactive_on_update="false" label="Document / Passport / ID" sequence="2" value="document_passport_id"/>
+                <element inactive_on_update="false" label="All Other Items" sequence="3" value="all_other_items"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="last_location_seeing" choice_table="x_1445464_airpor_0_report" label="Last Location Seeing" max_length="40" name="last_location_seeing" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Security Line" sequence="0" value="security_line"/>
+                <element inactive_on_update="false" label="Gates" sequence="1" value="gates"/>
+                <element inactive_on_update="false" label="Check In area" sequence="2" value="check_in_area"/>
+                <element inactive_on_update="false" label="Others" sequence="3" value="others"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Last Name" max_length="40" name="last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Phone Number" max_length="40" name="phone_number" type="string"/>
+        <element choice="3" choice_field="priority" choice_table="x_1445464_airpor_0_report" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Tier 1" sequence="0" value="tier_1"/>
+                <element inactive_on_update="false" label="Tier 2" sequence="1" value="tier_2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Short description" mandatory="true" max_length="100" name="short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Tier" max_length="40" name="tier" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Tier 1" sequence="0" value="tier_1"/>
+                <element inactive_on_update="false" label="Tier 2" sequence="1" value="tier_2"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="assign_to"/>
+        </index>
+        <index name="index2">
+            <element name="assignment_grou0"/>
+        </index>
+    </element>
+</database>
